@@ -1,5 +1,8 @@
 # HarbourWasteControl IoT 2021 - Concept
 
+
+(detergenti, total suspended solids - TSS)
+
 HarbourWasteControl ai fini della salvaguardia della qualità delle acque portuali, (?Porto di Pescara), prende in considerazione ed esamina le esigenze dei macrosegmenti target coinvolti dalla problematica in oggetto. 
 I target/user-personas considerati rilevanti per lo studio in essere sono:
 - Ente di gestione del porto (?Marina di Pescara SRL - www.marinape.com/statuto.html) 
