@@ -3,15 +3,18 @@
 
 (detergenti, total suspended solids - TSS)
 
-HarbourWasteControl ai fini della salvaguardia della qualità delle acque portuali, (?Porto di Pescara), prende in considerazione ed esamina le esigenze dei macrosegmenti target coinvolti dalla problematica in oggetto. 
-I target/user-personas considerati rilevanti per lo studio in essere sono:
-- Ente di gestione del porto (?Marina di Pescara SRL - www.marinape.com/statuto.html) 
-- Proprietari imbarcazioni (Sondaggi reali tramite piattaforma Google Module ad un Pool random di 30 possessori sugli attuali X presenti all'interno della struttura portuale)  
+HarbourWasteControl ai fini del controllo qualità delle acque portuali, prende in considerazione ed esamina le esigenze di due macrosegmenti target coinvolti dalla problematica in oggetto:
+- Ente di gestione del porto 
+- Proprietari delle imbarcazioni, tramite sondaggi online ad un pool di 15 proprietari reali  
 
 ## Ente gestore del porto
-Secondo il Decreto Legislativo 24 giugno 2003, n. 182 (https://www.camera.it/parlam/leggi/deleghe/03182dl.htm) l'autorità portuale è tenuta al trattamento dei rifiuti reflui delle imbarcazioni tramite il proprio impianto di smaltimento. Il porto XY, come da statuto risulta essere dotato di tale struttura, ciononstate al fine di rilevare le effrazioni alla corretta procedura di smaltimento di tali sostanze, MarinaPE può avvalersi del servizio HarbourWasteControl. I dati dei rilevamenti in tempo reale provenienti dalla rete sensoristica di HarbourWasteControl facilitano l'applicazione delle sanzioni previste dal decreto in oggetto (Art. 13) 
+Secondo il Decreto Legislativo 24 giugno 2003, n. 182 (https://www.camera.it/parlam/leggi/deleghe/03182dl.htm), attuazione in italia della direttiva europea (https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=celex:32000L0059) 2000/59/CE in Italia l'autorità portuale è tenuta al trattamento dei rifiuti reflui delle imbarcazioni tramite il proprio impianto di smaltimento. Ciononstate al fine di rilevare le effrazioni alla corretta procedura di smaltimento di tali sostanze, l'ente portuale può avvalersi del servizio HarbourWasteControl. I dati dei rilevamenti in tempo reale provenienti dalla rete sensoristica di HarbourWasteControl facilitano l'applicazione delle sanzioni previste dal decreto in oggetto (Art. 13) 
 
 ## Proprietari imbarcazioni - Dati da Google Module ()
 
+## Altre fonti
+- 
+- https://blog.magellanostore.it/acque-nere-smaltirle/
+ 
 
 
