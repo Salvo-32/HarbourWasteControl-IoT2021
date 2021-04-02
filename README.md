@@ -1,8 +1,5 @@
 # HarbourWasteControl IoT 2021
 
-Lauterio Davide Matricola 1934615
-https://www.linkedin.com/in/davide-lauterio-82a144154/
-
 Fava Salvatore Matricola 1936027
 https://www.linkedin.com/in/salvatore-fava-19426a205/
 
