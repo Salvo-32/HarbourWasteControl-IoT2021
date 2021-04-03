@@ -21,10 +21,10 @@ L'obiettivo del sondaggio è verificare il livello di conoscenza delle procedure
 A snapshot of the poll results is the following, provided by Google:
 ![LastPoll](/Picture/ShipOwners-Poll.png)
 
-Processing the data of the survey, it is possible to clearly infer that 
-* the 50% half of the partecipants know how to deal with its wastewater, but unfortunately less than the 30% of them notify the harbour managing authorithy about the real amount of sewerage. 
-* about the idea to employ a technological system along the harbour docks to protect port water and human beings' health, the 70% of them state the need of doing something to make the water cleaner and healtier and . This means the ship skippers are aware of the reality
-* Even though there exists the 10% of attendees should be annoyed about the introduction of the underlying concepts offered by services like HarbourWasteControl, the 90% of them are more prone to getting better water quality. 
+Processing the data of the survey, it is possible to clearly infer that: 
+* the 50% half of the partecipants know how to deal with its wastewater, but unfortunately less than the 30% of them notify the harbour managing authorithy about the real amount of sewerage;
+* about the idea to employ a technological system along the harbour docks to protect port water and human beings' health, the 70% of them state the need of doing something to get the water cleaner and healtier. This means the ship skippers are aware of the reality, i.e. the poor water quality inside the harbour;
+* Even though there exists the 10% of attendees should be annoyed about the introduction of the underlying concepts offered by services like HarbourWasteControl, the 90% of them are more prone to getting better water quality;
 * Eventually, the shipowners should appreciate the change more and more whether the port managing authority should offer them, discounts with respect to the harbour fees
 
 ## Sources
