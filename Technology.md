@@ -16,7 +16,7 @@ The gateway conists of a raspberry pi with a Dragino LoRa shield attached.
 
 ![Image1](Picture/architecture.png?raw=true)
 
-Sources
+#### Sources
 1. https://wiki.dfrobot.com/Turbidity_sensor_SKU__SEN0189
 2. https://www.futurashop.it/modulo-per-sensore-ph-8300-YB427
 3. https://www.futurashop.it/sensore-ph-2846-PHSENSOR
