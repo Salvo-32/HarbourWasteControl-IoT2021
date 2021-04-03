@@ -17,6 +17,7 @@ In tale situazione, l'autorità portuale (defenceless) non possiede nussuna moda
 Since questo deficit, HarbourWasteControl si propone come servizio per la rilevazione e gestione reale (See [Readme](/README.md), [Technology](/Technology.md)) delle above-mentioned offence a favore dello user-persona Ente gestore del porto 
 
 ## Proprietari imbarcazioni - Dati da Google Module ()
+https://forms.gle/8TZQKGpQ1RFh6UQP9
 
 ## Sources
 - https://www.camera.it/parlam/leggi/deleghe/03182dl.htm
