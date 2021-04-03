@@ -14,6 +14,8 @@ The sensor node is composed of a Nucleo-f401re board, one pH sensor, one Turbidi
 The gateway conists of a raspberry pi with a Dragino LoRa shield attached. 
 - The rasppberry will run linux and executes RSMB (Really Small Message Broker), the MQTT-SN borker, and Mosquitto, the MQTT broker.
 
+![Image1](Picture/architecture.png?raw=true)
+
 Sources
 1. https://wiki.dfrobot.com/Turbidity_sensor_SKU__SEN0189
 2. https://www.futurashop.it/modulo-per-sensore-ph-8300-YB427
