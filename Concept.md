@@ -27,6 +27,11 @@ Processing the data of the survey, it is possible to clearly infer that:
 * Even though there exists the 10% of attendees should be annoyed about the introduction of the underlying concepts offered by services like HarbourWasteControl, the 90% of them are more prone to getting better water quality;
 * Eventually, the shipowners should appreciate the change more and more whether the port managing authority should offer them, discounts with respect to the harbour fees
 
+## Storyboard
+
+![Storyboard](/Picture/Storyboard-Complete.png)
+
+
 ## Sources
 - https://www.camera.it/parlam/leggi/deleghe/03182dl.htm
 - https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=celex:32000L0059
