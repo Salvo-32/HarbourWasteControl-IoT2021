@@ -1,6 +1,6 @@
 # HarbourWasteControl IoT 2021 - Technology
 ## Architecture
-For each boat a sensor node is deployed, with a unique id that identifies the area the boat is moored. Each area is associated with a gateway that receives the data from the node and then send it to the cloud. For the cloud-based backend services, we use AWS. AWS analyzes the data and make it possible to the user to view the analysis and the data collected.
+For each boat a sensor node is deployed, with a unique id that identifies the area where the boat is moored. Each area is associated with a gateway that receives the data from the node and then send it to the cloud. For the cloud-based backend services, we use AWS. AWS analyzes the data and make it possible to the user to view the analysis and the data collected.
 
 Before the system can working properly it is necessary a calibration phase where the system can understand which are the "normal" values at the port. This allows the cloud analytics program to have an intial database to start its analysis.
 
