@@ -22,3 +22,6 @@ The gateway conists of a raspberry pi with a Dragino LoRa shield attached.
 3. https://www.futurashop.it/sensore-ph-2846-PHSENSOR
 4. https://www.researchgate.net/publication/7869606_Statistical_analyses_of_coastal_water_quality_for_a_port_and_harbor_region_in_India
 5. https://www.eea.europa.eu/publications/european-bathing-water-quality-in-2019/european-bathing-water-quality-in-2019
+6. https://sensorex.com/ph-sensors-3/#comb-ph-tab
+7. https://en.wikipedia.org/wiki/PH#Seawater
+8. https://en.wikipedia.org/wiki/Turbidity
