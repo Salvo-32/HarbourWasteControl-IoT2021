@@ -22,7 +22,7 @@ The sensor node components will be appropriately shielded by a waterproof enclou
 The gateway conists of a raspberry pi with a Dragino LoRa shield attached. 
 - The rasppberry will run linux and executes RSMB (Really Small Message Broker), the MQTT-SN borker, and Mosquitto, the MQTT broker.
 
-![Image1](Picture/architecture.png?raw=true)
+![Image1](Picture/architecture.png)
 <img src="https://github.com/Salvo-32/HarbourWasteControl-IoT2021/blob/main/Picture/architecture2.png" width="500">
 
 #### Sources
