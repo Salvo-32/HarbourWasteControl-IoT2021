@@ -34,7 +34,7 @@ Way of communication | list of possible media to receive HWC information
 First-release survey
 Indicator name | Description
 ------------ | -------------
-Satisfaction of Preferred way of communication | four different levels of ascending satisfaction degree
+Satisfaction of the preferred way of communication | four different levels of ascending satisfaction degree
 Actual water quality improvement | Real effects of the project against illegal wastewater draining  
 Further improvements | open textbox for shipowners' hint  
 
@@ -51,8 +51,18 @@ TBA
 
 ## Power consumption
 The feature offered by iot-lab.info is used to monitor the voltage, current and power consumption of the IoT system. 
-The consumption of the node in iot-lab.info is measured through an INA226 hardware component.
+The consumption of the real node is measured through an INA226 hardware component.
 
+### Evaluation methodology
+
+
+### Perfomance indicators
+* Current [mA]
+* Power [mW]
+
+### Tool
+* INA226 current/power monitor component
+* Amperometer / Wattmeter
 
 ## Network technology assessment
 ### Network traffic analysis
