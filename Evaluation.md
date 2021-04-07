@@ -32,6 +32,11 @@ Interest of pullution data produced by HWC | four different levels of ascending 
 Way of communication | list of possible media to receive HWC information 
 
 First-release survey
+Indicator name | Description
+------------ | -------------
+Satisfaction of Preferred way of communication | four different levels of ascending satisfaction degree
+Actual water quality improvement | Real effects of the project against illegal wastewater draining  
+Further improvements | open textbox for shipowners' hint  
 
 ### Tool
 Both the above surveys make use of Google Forms platform that is a survey administration software included as part of the free, web-based Google Docs Editors suite offered by Google. The app allows users to create and edit surveys online while collaborating with other users in real-time (More details at [Google Forms](https://www.google.com/intl/en-GB/forms/about/)).
@@ -44,24 +49,19 @@ TBA
 #### First-release survey
 TBA
 
-## 
-To understand the effective validity of our initial project idea we talk to port managers and held a survey among boat owners.
-![Image1](Picture/ShipOwners-Poll.png?raw=true)
-
-### Harbour managing authority
-### Shipowners 
-### Sea swimmers
-
 ## Power consumption
+The feature offered by iot-lab.info is used to monitor the voltage, current and power consumption of the IoT system. 
+The consumption of the node in iot-lab.info is measured through an INA226 hardware component.
+
 
 ## Network technology assessment
 ### Network traffic analysis
 
 ## Security and Privacy 
-The feature offered by iot-lab.info is used to monitor the voltage, current and power consumption of the IoT system. 
-The consumption of the node in iot-lab.info is measured through an INA226 hardware component.
+TBA
 
 ## Cost
+TBA
 
 ## Sources
 * https://www.google.com/intl/en-GB/forms/about/
