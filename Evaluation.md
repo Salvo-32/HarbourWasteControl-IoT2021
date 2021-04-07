@@ -2,7 +2,7 @@
 Brief introduction to all of the According to lecture 11 by VItaletti 
 
 ## Index
-1. [User eXperience and satisfaction](./Evaluation.md#Objectives)
+1. [User eXperience and satisfaction](/Evaluation.md#Objectives)
 2. 
 
 
