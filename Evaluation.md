@@ -2,8 +2,8 @@
 Brief introduction to all of the According to lecture 11 by VItaletti 
 
 ## Index
-1. [User eXperience and satisfaction](/Evaluation.md#Objectives)
-2. 
+1. [User experience and satisfaction](#User experience and satisfaction)
+2. []
 
 
 
@@ -27,14 +27,7 @@ Brief introduction to all of the According to lecture 11 by VItaletti
 
 
 
-
-
-
-
-
-
-
-## 1. User experience and satisfaction/feedback 
+## User experience and satisfaction 
 To understand the effective validity of our initial project idea we talk to port managers and held a survey among boat owners.
 ![Image1](Picture/ShipOwners-Poll.png?raw=true)
 
