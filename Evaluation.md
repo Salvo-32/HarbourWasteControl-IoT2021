@@ -14,9 +14,22 @@ The evaluation of a paramenter comprises:
 5. [Cost](Evaluation.md/#Cost)
 
 ## User eXperience and satisfaction 
-As Don Norman and Jakob Nielsen state
-> User-experience encompasses all the aspects of the end-user's interaction withe company, its services and its products.
-According to this  
+As Don Norman and Jakob Nielsen state:
+> User-experience encompasses all the aspects of the end-user's interaction with the company, its services and its products.
+
+### Evaluation methodology
+Since the end-user is a key element for the project it is important to analyse the user satisfaction degree during the project development and when the the first release of HarbourWasteControl will be available. In order to this two different surveys will be conducted (Middle-term survey, First-release survey).
+
+### Perfomance indicators
+
+### Tool
+To study such problem from their point of view, a direct survey tool has been used, that is a survey carried out to a pool of real shipowners via Google Forms platform (Official link to the Poll). The survey has been carried out in Italian as the people involved in the survey are Italian (Future developments of the project see it translated into English). The aim of the survey is to test the ship commanders’ level of knowledge of wastewater draining procedures. Afterwards participants are asked to express their opinion about the introduction of a technological system for water quality measurement to prevent the illegal draining of waste substances in the docks.
+
+###
+
+
+
+## 
 To understand the effective validity of our initial project idea we talk to port managers and held a survey among boat owners.
 ![Image1](Picture/ShipOwners-Poll.png?raw=true)
 
