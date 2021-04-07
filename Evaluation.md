@@ -1,5 +1,10 @@
 # HarbourWasteControl IoT 2021 - Evaluation
-Brief introduction to all of the According to lecture 11 by VItaletti 
+The aim of this document is to describe HarbourWasteControl's performance in term of the different paramenters listed below. These paramenters come from the recommendations provided inside/during the [IoT 2021 course 10589747](http://ichatz.me/Site/InternetOfThings2021), in particular mostly from the Lecture 11 by [Prof. Andrea Vitaletti](https://github.com/andreavitaletti). Furthermore, the following evaluation concern both the one perfomed during the development and the one undertaken at the of the project.     
+
+The evaluation of a paramenter comprises:
+* Explanation of the evaluation methodology, 
+* List of the key performance indicators 
+* Indication of the tool used to analyse the specified indicators   
 
 ## Index
 1. [User eXperience and satisfaction](Evaluation.md/#User-eXperience-and-satisfaction)
