@@ -1,5 +1,5 @@
 # HarbourWasteControl IoT 2021 - Evaluation
-The aim of this document is to describe HarbourWasteControl's performance in term of the different paramenters listed below. These paramenters come from the recommendations provided inside/during the [IoT 2021 course 10589747](http://ichatz.me/Site/InternetOfThings2021), in particular mostly from the Lecture 11 by [Prof. Andrea Vitaletti](https://github.com/andreavitaletti). Furthermore, the following evaluation concern both the one perfomed during the development and the one undertaken at the of the project.     
+The aim of this document is to describe HarbourWasteControl's performance in term of the different paramenters listed below. These paramenters come from the recommendations provided inside/during the [IoT 2021 course 10589747](http://ichatz.me/Site/InternetOfThings2021), in particular from Lectures 9, 15, 19, 20 by [Prof. Ioannis Chatzigiannakis](https://github.com/ichatz) and Lecture 11 by [Prof. Andrea Vitaletti](https://github.com/andreavitaletti). Furthermore, the following evaluation concern both the one perfomed during the development and the one undertaken at the of the project.     
 
 The evaluation of a paramenter comprises:
 * Explanation of the evaluation methodology, 
@@ -14,8 +14,15 @@ The evaluation of a paramenter comprises:
 5. [Cost](Evaluation.md/#Cost)
 
 ## User eXperience and satisfaction 
+As Don Norman and Jakob Nielsen state
+> User-experience encompasses all the aspects of the end-user's interaction withe company, its services and its products.
+According to this  
 To understand the effective validity of our initial project idea we talk to port managers and held a survey among boat owners.
 ![Image1](Picture/ShipOwners-Poll.png?raw=true)
+
+### Harbour managing authority
+### Shipowners 
+### Sea swimmers
 
 ## Power consumption
 
