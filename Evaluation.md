@@ -18,16 +18,31 @@ As Don Norman and Jakob Nielsen state:
 > User-experience encompasses all the aspects of the end-user's interaction with the company, its services and its products.
 
 ### Evaluation methodology
-Since the end-user is a key element for the project it is important to analyse the user satisfaction degree during the project development and when the the first release of HarbourWasteControl will be available. In order to this two different surveys will be conducted (Middle-term survey, First-release survey).
+Since the end-user is the key element for the project it is important to analyse the user satisfaction degree during the project development and when the first release of HarbourWasteControl will be available. In order to this, two different surveys ([Middle-term survey](/Evaluation#Middle-term-survery), [First-release survey](/Evaluation#First-release-survey)) will be carried out to a pool of real shipowners, the one already involved in [Concept](/Concept.md).
+ 
+The aim of the survey is to test the ship commanders’ level of knowledge of wastewater draining procedures. Afterwards participants are asked to express their opinion about the introduction of a technological system for water quality measurement to prevent the illegal draining of waste substances in the docks.
 
 ### Perfomance indicators
+Middle-term survey
+
+Indicator name | Description
+------------ | -------------
+Desidered HarbourWasteControl characteristics | list of potential functionalities that shipowner would like to add
+Interest of pullution data produced by HWC | four different levels of ascending interest
+Way of communication | list of possible media to receive HWC information 
+
+First-release survey
 
 ### Tool
-To study such problem from their point of view, a direct survey tool has been used, that is a survey carried out to a pool of real shipowners via Google Forms platform (Official link to the Poll). The survey has been carried out in Italian as the people involved in the survey are Italian (Future developments of the project see it translated into English). The aim of the survey is to test the ship commanders’ level of knowledge of wastewater draining procedures. Afterwards participants are asked to express their opinion about the introduction of a technological system for water quality measurement to prevent the illegal draining of waste substances in the docks.
+Both the above surveys make use of Google Forms platform that is a survey administration software included as part of the free, web-based Google Docs Editors suite offered by Google. The app allows users to create and edit surveys online while collaborating with other users in real-time (More details at [Google Forms](https://www.google.com/intl/en-GB/forms/about/)).
+They will be carried out in Italian as the people involved in the survey are Italian (Future developments of the project see it translated into English). 
 
-###
 
+#### Middle-term survery
+TBA
 
+#### First-release survey
+TBA
 
 ## 
 To understand the effective validity of our initial project idea we talk to port managers and held a survey among boat owners.
@@ -47,3 +62,7 @@ The feature offered by iot-lab.info is used to monitor the voltage, current and 
 The consumption of the node in iot-lab.info is measured through an INA226 hardware component.
 
 ## Cost
+
+## Sources
+* https://www.google.com/intl/en-GB/forms/about/
+* https://en.wikipedia.org/wiki/Google_Forms
