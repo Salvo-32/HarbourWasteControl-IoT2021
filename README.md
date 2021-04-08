@@ -1,4 +1,4 @@
-# HarbourWasteControl IoT 2021
+# HarbourWasteControl
 
 ## Team
 Fava Salvatore Matricola 1936027
