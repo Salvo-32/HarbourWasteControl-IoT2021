@@ -17,8 +17,8 @@ Docked boats, during their stay in the port, often illegally unload  wastewater 
 
 ## Youtube videos
 * [HarbourWasteControl - Idea, Key functionalities](https://www.youtube.com/watch?v=1RTiaTGuKnM)
-* [HarbourWasteControl - Technical approach, Architecture, Technologies](https://www.youtube.com/watch?v=1RTiaTGuKnM)
-* [HarbourWasteControl - Performance evaluation plan](https://www.youtube.com/watch?v=1RTiaTGuKnM)
+* [HarbourWasteControl - Technical approach, Architecture, Technologies](https://www.youtube.com/watch?v=ik80IrD7ddI)
+* [HarbourWasteControl - Performance evaluation plan](https://www.youtube.com/watch?v=lbDM-yVXxGs)
 
 ## Sources
 1. https://en.wikipedia.org/wiki/Mooring
