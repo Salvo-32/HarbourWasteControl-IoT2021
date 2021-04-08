@@ -62,7 +62,7 @@ The consumption of the real node is measured through an INA226 hardware componen
 
 ### Tool
 * INA226 current/power monitor component
-* Amperometer / Wattmeter
+* Ammeter / Wattmeter
 
 ## Network technology assessment
 ### Network traffic analysis
