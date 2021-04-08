@@ -71,7 +71,20 @@ The consumption of the real node is measured through an INA226 hardware componen
 TBA
 
 ## Cost
-TBA
+* Sensor node
+  * Nucleo-f401re ~ 20€
+  * pH sensor ~ 20€
+  * Turbidity sensor ~ 20€
+  * Lora shield ~ 30€
+  * Portable battery ~ 20€
+  * Waterproof case ~ 20€
+* Gateway
+  * Raspberry pi ~ 30€
+  * Lora shield ~ 30€
+  * Solar panel (optional) ~ 50 €
+  * Portable battery (optional) ~ 30€
+  * 3g/4g shield ~ 40€
+  * Waterproof case ~ 20€
 
 ## Sources
 * https://www.google.com/intl/en-GB/forms/about/
