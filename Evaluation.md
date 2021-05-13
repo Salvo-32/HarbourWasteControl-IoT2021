@@ -55,7 +55,6 @@ The consumption of the real node is measured through an INA226 hardware componen
 
 ### Evaluation methodology
 
-
 ### Perfomance indicators
 * Current [mA]
 * Power [mW]
@@ -68,23 +67,7 @@ The consumption of the real node is measured through an INA226 hardware componen
 ### Network traffic analysis
 
 ## Security and Privacy 
-TBA
-
-## Cost
-* Sensor node
-  * Nucleo-f401re ~ 20€
-  * pH sensor ~ 20€
-  * Turbidity sensor ~ 20€
-  * Lora shield ~ 30€
-  * Portable battery ~ 20€
-  * Waterproof case ~ 20€
-* Gateway
-  * Raspberry pi ~ 30€
-  * Lora shield ~ 30€
-  * Solar panel (optional) ~ 50 €
-  * Portable battery (optional) ~ 30€
-  * 3g/4g shield ~ 40€
-  * Waterproof case ~ 20€
+Use the security protocol offered by LoRaWAN 1.0 that specifies the use of a number of security keys: NwkSKey, AppSKey and AppKey. All keys have a length of 128 bits, the algorithm used is AES-128. Before a node can exchange messages in the LoRaWAN network, activation procedure has to be finished. For the project we use Over-the-Air Activation (OTAA) method.
 
 ## Sources
 * https://www.google.com/intl/en-GB/forms/about/
