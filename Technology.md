@@ -5,9 +5,7 @@ For each boat a sensor node is deployed, with a unique id that identifies the ar
 Before the system can working properly it is necessary a calibration phase where the system can understand which are the "normal" values at the port. This allows the cloud analytics program to have an intial database to start its analysis.
 
 ## Networking
-The sensor node and the gateway comunicate via MQTT over LoRa. Each sensor node publishes only on one topic associated with its own unique identifier. The gateway act as both MQTT-SN broker and MQTT broker, and also as tranparent bridge between the two. The gateway once it receives data from one node it sends it to the cloud-based backend via 3G/4G.
-
-In case of a problem with the sensor node, for example a sensor mulfunction or battery exhausted, the sensor node will send a message on the same topic to the gateway with some information about the problem, that then will be sent to the cloud. In case of a problem with the gateway, in a similar way the gateway will send a message to the cloud in a special topic used only for this type of events.
+The sensor node and the gateway comunicate via LoRa. Each sensor node sends data associated with its own unique identifier. The gateway act as a bridge between the WSN and MQTT broker. The gateway once it receives data from one node it sends it to the cloud-based backend via 3G/4G. In case of a problem with the sensor node, for example a sensor mulfunction or battery exhausted, the sensor node will send a message to the gateway with some information about the problem, that then will be sent to the cloud. In case of a problem with the gateway, in a similar way the gateway will send a message to the cloud in a special topic used only for this type of events.
 
 Lora classify end nodes in three differnet classes. The sensor nodes are considered Class A, battery powered sensor with no latency constraint, while the gateway is class C, because it can listen all the time for data.
 
@@ -20,7 +18,7 @@ The sensor node is composed of a Nucleo-f401re board, one pH sensor, one Turbidi
 The sensor node components will be appropriately shielded by a waterproof enclousure to prevent damage by water, and in general by atmospheric phenomena.
 
 The gateway conists of a raspberry pi with a Dragino LoRa shield attached. 
-- The rasppberry will run linux and executes RSMB (Really Small Message Broker), the MQTT-SN borker, and Mosquitto, the MQTT broker.
+- The rasppberry will run linux and executes the MQTT broker and the bridge between the Lora and MQTT broker.
 
 Because the raspberry pi must be turned on for a long period of time it must be connectd either to the harbour electrical system via calble, or for extra mobility via a solar panel that charges a portable battery connected to the raspberry pi.
 
@@ -30,7 +28,5 @@ Because the raspberry pi must be turned on for a long period of time it must be 
 #### Sources
 1. https://wiki.dfrobot.com/Turbidity_sensor_SKU__SEN0189
 2. https://wiki.dfrobot.com/PH_meter_SKU__SEN0161_
-3. https://www.eea.europa.eu/publications/european-bathing-water-quality-in-2019/european-bathing-water-quality-in-2019
+3. https://www.gazzettaufficiale.it/atto/serie_generale/caricaArticolo?art.progressivo=0&art.idArticolo=5&art.versione=1&art.codiceRedazionale=006G0171&art.dataPubblicazioneGazzetta=2006-04-14&art.idGruppo=54&art.idSottoArticolo1=10&art.idSottoArticolo=1&art.flagTipoArticolo=2
 4. https://sensorex.com/ph-sensors-3/#comb-ph-tab
-5. https://en.wikipedia.org/wiki/PH#Seawater
-6. https://en.wikipedia.org/wiki/Turbidity
