@@ -1,3 +1,4 @@
+# 2nd delivery
 ## Comments received during first delivery
 * Instead of just reading the values from the sensors and analyze wheter the dock is polluted or not, it would be better to perform an overall analysis on the port water, namely estimate the values (pH, turbidity, ...)  on a region of the port water
 * Remove use floating anti-pollution barrier, becuase they are only used only if a boat is know is releasing polluted substances. To surround each mooring boat with  a barrier is practically impossible.
