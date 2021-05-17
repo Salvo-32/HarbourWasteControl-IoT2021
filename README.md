@@ -1,10 +1,10 @@
 # HarbourWasteControl
 
 ## Team
-Fava Salvatore Matricola 1936027
+Fava Salvatore
 https://www.linkedin.com/in/salvatore-fava-19426a205/
 
-Santangelo Lorenzo Matricola 1795872
+Santangelo Lorenzo
 https://www.linkedin.com/in/lorenzo-santangelo-342877208/
 
 ## Brief description
