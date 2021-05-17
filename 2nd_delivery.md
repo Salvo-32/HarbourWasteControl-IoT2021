@@ -11,7 +11,7 @@
 ### Technology
 * Change sources to **support and legitimize** validity of the specified sensors of the first group assignment, namely we make use of the legislative decree [D. Lgs 152/06](https://www.gazzettaufficiale.it/atto/serie_generale/caricaArticolo?art.progressivo=0&art.idArticolo=5&art.versione=1&art.codiceRedazionale=006G0171&art.dataPubblicazioneGazzetta=2006-04-14&art.idGruppo=54&art.idSottoArticolo1=10&art.idSottoArticolo=1&art.flagTipoArticolo=2). This decree regulates all the parameters (TSS, pH, temperature) to be analyzed on superficial waters, stating the limits of the that values.
 * Removed MQTT-S portocol since we are using LoRa technology
-* Added draft about machine learning algorithm to estimate the above-mentioned values on a point of the port water not covered by sensor (regression)
+* Added draft about machine learning algorithm to estimate the above-mentioned values on a point of the port water not covered by sensors (Spatial Interpolation Model)
 ### Evaluation
 * Add draft about Security and Privacy section
 * Removed Cost section since it is out of the scope of this course
