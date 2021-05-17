@@ -29,6 +29,8 @@ Processing the data of the survey, it is possible to clearly infer that:
 
 ![Storyboard](/Picture/Storyboard-Complete.png)
 
+## Previous versions of this document
+* First version of the Concept file can be found [here](releases/tag/1.0)
 
 ## Sources
 - https://www.camera.it/parlam/leggi/deleghe/03182dl.htm
