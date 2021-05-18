@@ -18,5 +18,5 @@
 ## Missing functionalities
 * Finalize machine learning algorithm on Technology part
 * Complete Security and Privacy section
-* Monitor and analyze power consmption using IoTLab
-* Monitor and analyze the network traffic performances using IoTLab
+* Improvement of the power consumption analysis using FIT IoTLab on large scale, as well as performing measurement locally using an amperometer between the power supply and the nucleo board.
+* Improvement of the network traffic analysis using FIT IoTLab on large scale
