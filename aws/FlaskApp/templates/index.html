@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<script src="https://cdn.plot.ly/plotly-2.3.1.min.js"></script>	
+
+		<style>
+		
+			#grid_wrapper {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-template-rows: 1fr 1fr;
+				grid-gap: 20px;
+			}		
+		</style>
+		<title> HarbourWasteControl-IoT2021 </title>
+	</head>
+
+
+	<body>
+		<h1> HarbourWasteControl-IoT2021 </h1>
+		<p> HarbourWasteControl intends to monitor the quality of the port water. The project foresees the installation of a set of measuring sensors, positioned statically in it, and spreaded all over the harbour, allowing to estimate the values on all port water suface. </p>
+		<div id="grid_wrapper">
+			<div id="turbidity_values"></div>
+			<div id="turbidity_measured_err"></div>
+			<div id="ph_values"></div>
+			<div id="ph_measured_err"></div>
+		</div>
+		
+		<script>
+
+			function drawPlots(data) {
+			
+				var position_sensors = {
+					x: data.positionSensorsX,
+					y: data.positionSensorsY,
+					mode: 'markers',
+					type: 'scatter',
+					marker: { size: 12 },
+					name: 'sensor'
+				};
+
+				Plotly.newPlot('turbidity_values', [ {
+					z: data.turbidity.Z,
+					x: data.turbidity.X,
+					y: data.turbidity.Y,
+					type: 'contour',
+					name: 'turbidity'
+				}, position_sensors], {
+				  title: 'Predicted turbidity in the area starting from the sensed data'
+				} );
+				
+				Plotly.newPlot('turbidity_measured_err', [ {
+					z: data.turbidity.Ze,
+					x: data.turbidity.X,
+					y: data.turbidity.Y,
+					type: 'contour',
+					name: 'turbidity measured error'
+				} ,position_sensors], {
+				  title: 'The difference between the predicted turbidity and the sensed data'
+				} );
+				
+				Plotly.newPlot('ph_values', [ {
+					z: data.ph.Z,
+					x: data.ph.X,
+					y: data.ph.Y,
+					type: 'contour',
+					name: 'ph'
+				}, position_sensors], {
+				  title: 'Predicted ph in the area starting from the sensed data'
+				} );
+				
+				Plotly.newPlot('ph_measured_err', [ {
+					z: data.ph.Ze,
+					x: data.ph.X,
+					y: data.ph.Y,
+					type: 'contour',
+					name: 'ph measured error'
+				} ,position_sensors], {
+				  title: 'The difference between the predicted ph and the sensed data'
+				} );
+
+			}
+						
+			async function getDataFrom(url) {
+				const response = await fetch(url, {
+					method: 'GET',
+					headers: {
+					'Content-Type': 'application/json'
+					}	
+				});
+				
+				return response;
+			}
+			function getValues() {
+				getDataFrom('/getdata')
+				.then(response => response.json())
+				.then(data => {
+					drawPlots(data);
+				})
+				.catch(error => console.log('error', error));
+			
+				setTimeout(getValues, 10000);
+			};
+
+			getValues();
+
+		</script>
+	</body>
+</html>
