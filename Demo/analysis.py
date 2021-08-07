@@ -1,4 +1,4 @@
-import time
+import sys
 import json
 import paho.mqtt.client as mqtt 
 import numpy
@@ -29,7 +29,7 @@ client.loop_start()
 client.subscribe('+/devices/+/up')
 client.on_message=on_message 
 
-time.sleep(120)
+sys.stdin.read(1)
 client.loop_stop()
 
 print(X)

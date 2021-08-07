@@ -25,15 +25,19 @@ int main(void)
 {
 	char message[MSG_MAXLEN];
 
-    /* 1. initialize the LoRaMAC MAC layer */
-    semtech_loramac_init(&loramac);
-    /* 2. set the keys identifying the device */
-    semtech_loramac_set_deveui(&loramac, deveui);
-    semtech_loramac_set_appeui(&loramac, appeui);
-    semtech_loramac_set_appkey(&loramac, appkey);
-    /* 3. join the network */
-    if (semtech_loramac_join(&loramac, LORAMAC_JOIN_OTAA) != SEMTECH_LORAMAC_JOIN_SUCCEEDED) {
-        puts("Join procedure failed");
+	/* 1. initialize the LoRaMAC MAC layer */
+	semtech_loramac_init(&loramac);
+	/* 2. set the keys identifying the device */
+	semtech_loramac_set_deveui(&loramac, deveui);
+	semtech_loramac_set_appeui(&loramac, appeui);
+	semtech_loramac_set_appkey(&loramac, appkey);
+	
+	/* Use a fast datarate, e.g. BW125/SF7 in EU868 */  
+	semtech_loramac_set_dr(&loramac, LORAMAC_DR_5);
+
+	/* 3. join the network */
+	if (semtech_loramac_join(&loramac, LORAMAC_JOIN_OTAA) != SEMTECH_LORAMAC_JOIN_SUCCEEDED) {
+	        puts("Join procedure failed");
         return 1;
     }
     puts("Join procedure succeeded");

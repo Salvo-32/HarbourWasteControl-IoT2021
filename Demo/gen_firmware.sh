@@ -26,11 +26,10 @@ fi
 
 if [[ $OUTPUT_DIR == '' ]]
 then
-	mkdir output
 	OUTPUT_DIR='./output'
 fi
 
-make -C $SOURCE_DIE clean all
-make -C $SOURCE_DIR all
+make -sC $SOURCE_DIR clean all
+make -sC $SOURCE_DIR all
 cp $SOURCE_DIR"/bin/"$BOARD"/demo.elf" $OUTPUT_DIR/"device"$DEVICE_ID.elf
 
