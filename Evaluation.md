@@ -13,12 +13,13 @@ The following evaluation concerns both the one perfomed during the development p
 The evaluation of each paramenter includes:
 * Explanation of the evaluation methodology, 
 * List of the key performance indicators 
-* Indication of the tool used to analyse the specified indicators   
+* Indication of the tool used to analyse the specified indicators
+* Results
 
 ## Index
 1. [User eXperience and satisfaction](#User-eXperience-and-satisfaction)
 2. [Power consumption](#Power-consumption)
-3. [Network technology assessment](#Network-technology-assessment)
+3. [Network technology assessment/Network performace](#Network-technology-assessment)
 4. [Security and Privacy](#Security-and-Privacy)
 
 ## User eXperience and satisfaction 
@@ -37,37 +38,39 @@ Desired characteristics | Lst of potential functionalities that shipowner would 
 Interest of pullution data produced by HWC | four different levels of ascending interest
 Way of communication | list of possible media to receive HWC information 
 
-First-release survey
-Indicator name | Description
------------- | -------------
-Satisfaction of the preferred way of communication | four different levels of ascending satisfaction degree
-Actual water quality improvement | Real effects of the project against illegal wastewater draining  
-Further improvements | open textbox for shipowners' hint  
-
 ### Tool
-Both the above surveys make use of Google Forms platform that is a survey administration software included as part of the free, web-based Google Docs Editors suite offered by Google. The app allows users to create and edit surveys online while collaborating with other users in real-time (More details at [Google Forms](https://www.google.com/intl/en-GB/forms/about/)).
-They will be carried out in Italian as the people involved in the survey are Italian (Future developments of the project see it translated into English). 
+The above survey makes use of Google Forms platform that is a survey administration software included as part of the free, web-based Google Docs Editors suite offered by Google. The app allows users to create and edit surveys online while collaborating with other users in real-time (More details at [Google Forms](https://www.google.com/intl/en-GB/forms/about/)).
+It is carried out in Italian as the people involved in the survey are Italian (Future developments of the project see it translated into English). 
 
+### Results
+A snapshot of the poll results is the following, provided by Google:
+![LastPoll](/Picture/ShipOwners-Poll.png)
 
-#### Middle-term survery
-TBA
-
-#### First-release survey
-TBA
+Processing the data of the survey, it is possible to clearly infer that: 
+1. 50% of the partecipants know how to deal with their wastewater, but unfortunately less than 30% of them notify the harbour managing authorithy of the real amount of sewerage;
+2. As concern the idea of employing a technological system along the harbour docks to protect port waters and human beings' health, 70% of them state the need to do something to get the water cleaner and healthier. This means that ship skippers are aware of the reality, i.e. the poor quality of harbour waters;
+3. Even though 10% of attendees are annoyed by the introduction of inspection services like HarbourWasteControl, 90% of them are proner to getting better water quality;
+4. Eventually, the shipowners would appreciate this service more whether the port managing authority offered them discounts with respect to the harbour fees
 
 ## Power consumption
-The feature offered by iot-lab.info is used to monitor the voltage, current and power consumption of the IoT system. 
-The consumption of the real node is measured through an INA226 hardware component.
-
+This assesment analyses energy consumption of both real node and remote nodes, by measuring current and power levels during [firmware](Demo/main.c) is running on
 ### Evaluation methodology
+Current and power consumption of the real node is measured through the digital multimeter [Mastech MS8217](https://www.hackster.io/digilent/products/mastech-ms8217-autorange-digital-multimeter).
+
+
+The feature offered by iot-lab.info is used to monitor the voltage, current and power consumption of the IoT system. 
+
 
 ### Perfomance indicators
 * Current [mA]
 * Power [mW]
 
 ### Tool
-* INA226 current/power monitor component
-* Ammeter / Wattmeter
+* Digital multimeter [Mastech MS8217](https://www.hackster.io/digilent/products/mastech-ms8217-autorange-digital-multimeter)
+* [INA226](https://www.ti.com/product/INA226) by Texas Instruments is a current shunt and power monitor with an I2C or SMBUS-compatible interface. The device monitors both a shunt voltage drop and bus supply voltage. It enables direct readouts of **current** in amperes and **power** in watts
+
+
+### Results
 
 ## Network technology assessment
 ### Network traffic analysis
