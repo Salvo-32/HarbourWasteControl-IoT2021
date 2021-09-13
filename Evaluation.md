@@ -1,13 +1,22 @@
 # HarbourWasteControl IoT 2021 - Evaluation
-The aim of this document is to describe HarbourWasteControl's performance in term of the different paramenters listed below. These paramenters come from the recommendations provided inside/during the [IoT 2021 course 10589747](http://ichatz.me/Site/InternetOfThings2021), in particular from Lectures 9, 15, 19, 20 by [Prof. Ioannis Chatzigiannakis](https://github.com/ichatz) and Lecture 11 by [Prof. Andrea Vitaletti](https://github.com/andreavitaletti). Furthermore, the following evaluation concern both the one perfomed during the development and the one undertaken at the of the project.     
+The aim of this document is to describe HarbourWasteControl's performance in term of the different paramenters listed below. 
+These paramenters come from the recommendations provided during the [IoT 2021 course 10589747](http://ichatz.me/Site/InternetOfThings2021), in particular from:
+* Lecture 9 - UI/UX for IoT - [Prof. Ioannis Chatzigiannakis](https://github.com/ichatz)
+* Lecture 11 - Performance Evaluation for IoT - [Prof. Andrea Vitaletti](https://github.com/andreavitaletti).
+* Lecture 13 - LoRa networks - [Prof. Ioannis Chatzigiannakis](https://github.com/ichatz)
+* Lecture 20 - Privacy Preserving Computation - [Prof. Andrea Vitaletti](https://github.com/andreavitaletti)
+ 
+The following evaluation concerns both the one perfomed during the development phase and the one undertaken at the end of the project. Furthermore the evaluation is conducted at two different places:
+* (Locally) Real local node (ST B-L072Z-LRWAN1)[https://www.st.com/en/evaluation-tools/b-l072z-lrwan1.html], which makes use of LoRa modules and Turbidity and pH sensors
+* (Remotely) FIT IoT-LAB Testbed, which provide #25 (ST B-L072Z-LRWAN1)[https://www.iot-lab.info/docs/boards/st-b-l072z-lrwan1/], to perform large-scale evaluations
 
-The evaluation of a paramenter comprises:
+The evaluation of each paramenter includes:
 * Explanation of the evaluation methodology, 
 * List of the key performance indicators 
 * Indication of the tool used to analyse the specified indicators   
 
 ## Index
-1. [User eXperience and satisfaction](Evaluation.md/#User-eXperience-and-satisfaction)
+1. [User eXperience and satisfaction](#User-eXperience-and-satisfaction)
 2. [Power consumption](Evaluation.md/#Power-consumption)
 3. [Network technology assessment](Evaluation.md/#Network-technology-assessment)
 4. [Security and Privacy](Evaluation.md/#Security-and-Privacy)
