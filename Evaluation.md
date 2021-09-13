@@ -57,6 +57,7 @@ This assesment analyses energy consumption of both real node and remote nodes, b
 
 ### Evaluation methodology
 For the real node, current analysis takes place between the USB power supply and the acutual board. In particular a digital multimeter is connected in series as shown below. Every 10 seconds (sampling rate) for a period of 10 minutes, current shown in the multimeter's display is manually reported inside an OML file and then plotted using [OML plotting tool](https://www.iot-lab.info/docs/tools/consumption-monitoring/) by FIT IoT-LAB
+
 ![CircuitoAmperometroInSerie](/Picture/AmperometroInSerie.png)
 
 For the [Saclay](https://www.iot-lab.info/docs/deployment/saclay/) remote boards current and power analysis takes place thanks to the [Consumption monitoring tool](https://www.iot-lab.info/docs/tools/consumption-monitoring/). Each remote board is connected to an autonomous on-board system called Control Node (CN), as shown below, which is able to monitor its energy consumption. The advantage of using a dedicated MCU (Control node) is to guarantee real-time execution of these measurements. In this case, the evaluation is more accurate, since it is an automated one, and it takes 10 minutes (as in the real node) but at 65.95 ms sampling rate
@@ -81,11 +82,11 @@ Thanks to *Data Aggregation*, number of LoRa packets decreases therefore less cu
 ![DataAggregation](/Picture/DataAggregation.png)
 
 1. ```plot_oml_consum --input ~/.iot-lab/277099/consumption/st_lrwan1_local.oml --power --label "Endpoint (stlrwan1-local) - Power consumption analysis - Exp ID 277099"``` 
-![277099_stlrwan1-local_PowerMonitoring](./Evaluation/Picture/277099_stlrwan1-local_PowerMonitoring.png)
+![277099_stlrwan1-local_PowerMonitoring](./Picture/Evaluation/277099_stlrwan1-local_PowerMonitoring.png)
 3. ```plot_oml_consum --input ~/.iot-lab/277099/consumption/st_lrwan1_1.oml --power --label "Endpoint (stlrwan1-1) - Power consumption analysis - Exp ID 277099"``` 
-![277099_stlrwan1-1_PowerMonitoring](./Evaluation/Picture/277099_stlrwan1-1_PowerMonitoring.png)
+![277099_stlrwan1-1_PowerMonitoring](./Picture/Evaluation/277099_stlrwan1-1_PowerMonitoring.png)
 5. ```plot_oml_consum --input ~/.iot-lab/277099/consumption/st_lrwan1_2.oml --power --label "Endpoint (stlrwan1-2) - Power consumption analysis - Exp ID 277099"```
-![277099_stlrwan1-2_PowerMonitoring](./Picture/Evaluation/277099_stlrwan1-2_PowerMonitoring)
+![277099_stlrwan1-2_PowerMonitoring](./Picture/Evaluation/277099_stlrwan1-2_PowerMonitoring.png)
 4. ```plot_oml_consum --input ~/.iot-lab/277099/consumption/st_lrwan1_3.oml --power --label "Endpoint (stlrwan1-3) - Power consumption analysis - Exp ID 277099"```
 ![277099_stlrwan1-3_PowerMonitoring](./Picture/Evaluation/277099_stlrwan1-3_PowerMonitoring.png)
 5. ```plot_oml_consum --input ~/.iot-lab/277099/consumption/st_lrwan1_4.oml --power --label "Endpoint (stlrwan1-4) - Power consumption analysis - Exp ID 277099"```
