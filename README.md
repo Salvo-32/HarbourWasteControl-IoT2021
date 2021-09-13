@@ -8,7 +8,7 @@ Santangelo Lorenzo
 https://www.linkedin.com/in/lorenzo-santangelo-342877208/
 
 ## Brief description
-Docked boats, during their stay in the port, often illegally unload  wastewater in the sea (See [Concept](/Concept.md)), without being controlled by harbour authorities. In this connection HarbourWasteControl intends to monitor the quality of the port water, at each available dock, both when the ship is docked and when the dock is free. For each dock the project foresees the installation of a set of measuring sensors (See [Technology](/Technology.md)), positioned statically in it. The potential discharge of substances in the sea is pointed out by the above-mentioned set of sensor nodes spreaded all over the harbour, as well as it allows to estimate the values on all port water suface.
+Docked boats, during their stay in the port, often illegally unload  wastewater in the sea (See [Concept](/Concept.md)), without being controlled by harbour authorities. In this connection HarbourWasteControl intends to monitor the quality of the port water. The project foresees the installation of a set of measuring sensors (See [Technology](/Technology.md)), positioned statically in it. The potential discharge of substances in the sea is pointed out by the above-mentioned set of sensor nodes spreaded all over the harbour, as well as it allows to estimate the values on all port water suface.
 
 ## Links to the documents
 * [Concept](/Concept.md)
@@ -19,7 +19,6 @@ Docked boats, during their stay in the port, often illegally unload  wastewater 
 * [HarbourWasteControl - Technology, Architecture](https://youtu.be/1_gy5SUA4yE)
 * [HarbourWasteControl - Performance evaluation](https://www.youtube.com/watch?v=lbDM-yVXxGs)
 * [HarbourWasteControl - Future plans](https://youtu.be/BRzAuJotJ3k)
-
 
 ## Sources
 1. https://en.wikipedia.org/wiki/Mooring
