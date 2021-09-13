@@ -1,43 +1,40 @@
-APPLICATION = demo
+# name of your application
+APPLICATION = AnalogRead
 
+# If no BOARD is found in the environment, use this default:
+#BOARD ?= nucleo-f401re
 BOARD ?= b-l072z-lrwan1
 
-BOARD_WITHOUT_LORAMAC_RX := \
-    arduino-mega2560 \
-    i-nucleo-lrwan1 \
-    stm32f0discovery \
-    waspmote-pro \
+# This has to be the absolute path to the RIOT base directory:
+#RIOTBASE ?= $(CURDIR)/../../RIOT
+RIOTBASE ?= /home/salvo/RIOT-202107
 
+# Comment this out to disable code in RIOT that does safety checking
+# which is not needed in a production environment but helps in the
+# development process:
+DEVELHELP ?= 1
+
+# Change this to 0 show compiler invocation lines by default:
+QUIET ?= 1
+
+# Modules to include:
 USEMODULE += xtimer
+USEMODULE += periph_gpio
+USEMODULE += analog_util
+USEMODULE += printf_float
+FEATURES_REQUIRED += periph_adc
 
-LORA_DRIVER ?= sx1276
-LORA_REGION ?= EU868
-
-USEPKG += semtech-loramac
-USEMODULE += $(LORA_DRIVER)
-
-# load loramac RX if board supports it
-ifeq (,$(filter $(BOARD),$(BOARD_WITHOUT_LORAMAC_RX)))
-  USEMODULE += semtech_loramac_rx
-endif
-
-USEMODULE += auto_init_loramac
-USEMODULE += shell
-USEMODULE += shell_commands
+#LoRa
+# Default region is Europe and default band is 868MHz
 USEMODULE += fmt
+LORA_REGION ?= EU868
+USEMODULE += semtech_loramac_rx
 
-FEATURES_OPTIONAL += periph_eeprom
+# Include the Semtech-loramac package
+USEPKG += semtech-loramac
 
-# Default IotLab Config to run the test
-ifneq (,$(filter iotlab%,$(MAKECMDGOALS)))
-  IOTLAB_NODES ?= 1
-  IOTLAB_TYPE  ?= st-lrwan1:sx1276
-  IOTLAB_SITE  ?= saclay
-  include $(RIOTBASE)/dist/testbed-support/Makefile.iotlab
-endif
-
-CFLAGS += -DDEVICE_ID='"$(DEVICE_ID)"'
-CFLAGS += -DLATITUDE='"$(LATITUDE)"'
-CFLAGS += -DALTITUDE='"$(ALTITUDE)"'
+# Default radio driver is Semtech SX1276 (used by the B-L072Z-LRWAN1 board)
+LORA_DRIVER ?= sx1276
+USEMODULE += $(LORA_DRIVER) 	# Variable for Source code (main.c)
 
 include $(RIOTBASE)/Makefile.include
