@@ -161,7 +161,8 @@ int main(void) {
     float max_physical_value[ANALOG_INPUT_LINE_NUM] = { 14.0, 100.0 }; //mg/L
 
     //LoRa messages
-    const char message_structure[] = "{\"turbidity\":\"%f\", \"ph\":\"%f\"}"; //"device" field is removed since it is already in TTN message
+    //Data aggregation, pH and turbidity are sent with a single packet
+	const char message_structure[] = "{\"turbidity\":\"%f\", \"ph\":\"%f\"}"; //"device" field is removed since it is already in TTN message
     char buffer[MESSAGE_MAXLEN];
     strcpy(buffer, "");
 
