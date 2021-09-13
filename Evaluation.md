@@ -22,7 +22,7 @@ The evaluation of each paramenter includes:
 3. [Network technology assessment/Network performace](#Network-technology-assessment)
 4. [Security and Privacy](#Security-and-Privacy)
 
-## User eXperience and satisfaction 
+## 1. User eXperience and satisfaction 
 As Don Norman and Jakob Nielsen state:
 > User-experience encompasses all the aspects of the end-user's interaction with the company, its services and its products.
 
@@ -52,7 +52,7 @@ Processing the data of the survey, it is possible to clearly infer that:
 3. Even though 10% of attendees are annoyed by the introduction of inspection services like HarbourWasteControl, 90% of them are proner to getting better water quality;
 4. Eventually, the shipowners would appreciate this service more whether the port managing authority offered them discounts with respect to the harbour fees
 
-## Power consumption
+## 2. Power consumption
 This assesment analyses energy consumption of both real node and remote nodes, by measuring current and power levels during [firmware](Demo/main.c) is running on. 
 
 ### Evaluation methodology
@@ -95,10 +95,10 @@ Thanks to *Data Aggregation*, number of LoRa packets decreases therefore less cu
 
 
 
-## Network technology assessment
+## 3. Network technology assessment
 ### Network traffic analysis
 
-## Security and Privacy 
+## 4. Security and Privacy 
 Use the security protocol offered by LoRaWAN 1.0 that specifies the use of a number of security keys: NwkSKey, AppSKey and AppKey. All keys have a length of 128 bits, the algorithm used is AES-128. Before a node can exchange messages in the LoRaWAN network, activation procedure has to be finished. For the project we use Over-the-Air Activation (OTAA) method.
 
 ## Sources
