@@ -53,24 +53,47 @@ Processing the data of the survey, it is possible to clearly infer that:
 4. Eventually, the shipowners would appreciate this service more whether the port managing authority offered them discounts with respect to the harbour fees
 
 ## Power consumption
-This assesment analyses energy consumption of both real node and remote nodes, by measuring current and power levels during [firmware](Demo/main.c) is running on
+This assesment analyses energy consumption of both real node and remote nodes, by measuring current and power levels during [firmware](Demo/main.c) is running on. 
+
 ### Evaluation methodology
-Current and power consumption of the real node is measured through the digital multimeter [Mastech MS8217](https://www.hackster.io/digilent/products/mastech-ms8217-autorange-digital-multimeter).
+For the real node, current analysis takes place between the USB power supply and the acutual board. In particular a digital multimeter is connected in series as shown below. Every 10 seconds (sampling rate) for a period of 10 minutes, current shown in the multimeter's display is manually reported inside an OML file and then plotted using [OML plotting tool](https://www.iot-lab.info/docs/tools/consumption-monitoring/) by FIT IoT-LAB
+![CircuitoAmperometroInSerie](/Picture/AmperometroInSerie.png)
 
-
-The feature offered by iot-lab.info is used to monitor the voltage, current and power consumption of the IoT system. 
-
+For the [Saclay](https://www.iot-lab.info/docs/deployment/saclay/) remote boards current and power analysis takes place thanks to the [Consumption monitoring tool](https://www.iot-lab.info/docs/tools/consumption-monitoring/). Each remote board is connected to an autonomous on-board system called Control Node (CN), as shown below, which is able to monitor its energy consumption. The advantage of using a dedicated MCU (Control node) is to guarantee real-time execution of these measurements. In this case, the evaluation is more accurate, since it is an automated one, and it takes 10 minutes (as in the real node) but at 65.95 ms sampling rate
+![design-iotlab-node](/Picture/design-iotlab-node.png)
 
 ### Perfomance indicators
 * Current [mA]
 * Power [mW]
 
 ### Tool
-* Digital multimeter [Mastech MS8217](https://www.hackster.io/digilent/products/mastech-ms8217-autorange-digital-multimeter)
+* [Mastech MS8217](https://www.hackster.io/digilent/products/mastech-ms8217-autorange-digital-multimeter) Digital multimeter
 * [INA226](https://www.ti.com/product/INA226) by Texas Instruments is a current shunt and power monitor with an I2C or SMBUS-compatible interface. The device monitors both a shunt voltage drop and bus supply voltage. It enables direct readouts of **current** in amperes and **power** in watts
-
+* [OML plotting tool](https://www.iot-lab.info/docs/tools/consumption-monitoring/) by FIT IoT-LAB, a python script helps to analyse monitoring data, i.e. plots iot-lab consumption OML files as graphs (the ones below).
 
 ### Results
+Graphs reported below shows the way these two parameters change with respect to different activites board undertakes ([firmware - main.c](Demo/main.c)):
+1. Initialization and Use of the above-mentioned sensors to get environmental data, including the adc sampling and mapping between raw sampled data and physical quantities
+2. Initialization and Use of the three LEDs on board as actuators, to allow **indicate** successful pH reads, turbidity reads, sending of Lora messages
+3. LoRa network communications, including connection initialization, cripthography operations performed by Riot-Semtech functions, secure data exchange
+
+Thanks to *Data Aggregation*, number of LoRa packets decreases therefore less current peaks (less Energy consumption), but at the same time latency increases because packets are bigger than the packets containing only pH / turbudity value separately
+![DataAggregation](/Picture/DataAggregation.png)
+
+1. ```plot_oml_consum --input ~/.iot-lab/277099/consumption/st_lrwan1_local.oml --power --label "Endpoint (stlrwan1-local) - Power consumption analysis - Exp ID 277099"``` 
+![277099_stlrwan1-local_PowerMonitoring](./Evaluation/Picture/277099_stlrwan1-local_PowerMonitoring.png)
+3. ```plot_oml_consum --input ~/.iot-lab/277099/consumption/st_lrwan1_1.oml --power --label "Endpoint (stlrwan1-1) - Power consumption analysis - Exp ID 277099"``` 
+![277099_stlrwan1-1_PowerMonitoring](./Evaluation/Picture/277099_stlrwan1-1_PowerMonitoring.png)
+5. ```plot_oml_consum --input ~/.iot-lab/277099/consumption/st_lrwan1_2.oml --power --label "Endpoint (stlrwan1-2) - Power consumption analysis - Exp ID 277099"```
+![277099_stlrwan1-2_PowerMonitoring](./Picture/Evaluation/277099_stlrwan1-2_PowerMonitoring)
+4. ```plot_oml_consum --input ~/.iot-lab/277099/consumption/st_lrwan1_3.oml --power --label "Endpoint (stlrwan1-3) - Power consumption analysis - Exp ID 277099"```
+![277099_stlrwan1-3_PowerMonitoring](./Picture/Evaluation/277099_stlrwan1-3_PowerMonitoring.png)
+5. ```plot_oml_consum --input ~/.iot-lab/277099/consumption/st_lrwan1_4.oml --power --label "Endpoint (stlrwan1-4) - Power consumption analysis - Exp ID 277099"```
+![277099_stlrwan1-4_PowerMonitoring](./Picture/Evaluation/277099_stlrwan1-4_PowerMonitoring.png)
+6. ```plot_oml_consum --input ~/.iot-lab/277099/consumption/st_lrwan1_5.oml --power --label "Endpoint (stlrwan1-5) - Power consumption analysis - Exp ID 277099"```
+![277099_stlrwan1-5_PowerMonitoring](./Picture/Evaluation/277099_stlrwan1-5_PowerMonitoring.png)
+
+
 
 ## Network technology assessment
 ### Network traffic analysis
@@ -81,3 +104,4 @@ Use the security protocol offered by LoRaWAN 1.0 that specifies the use of a num
 ## Sources
 * https://www.google.com/intl/en-GB/forms/about/
 * https://en.wikipedia.org/wiki/Google_Forms
+* http://www.elemania.altervista.org/basi/schemi/schemi1c.html
