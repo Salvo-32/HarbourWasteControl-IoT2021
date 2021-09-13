@@ -7,8 +7,8 @@ These paramenters come from the recommendations provided during the [IoT 2021 co
 * Lecture 20 - Privacy Preserving Computation - [Prof. Andrea Vitaletti](https://github.com/andreavitaletti)
  
 The following evaluation concerns both the one perfomed during the development phase and the one undertaken at the end of the project. Furthermore the evaluation is conducted at two different places:
-* (Locally) Real local node (ST B-L072Z-LRWAN1)[https://www.st.com/en/evaluation-tools/b-l072z-lrwan1.html], which makes use of LoRa modules and Turbidity and pH sensors
-* (Remotely) FIT IoT-LAB Testbed, which provide #25 (ST B-L072Z-LRWAN1)[https://www.iot-lab.info/docs/boards/st-b-l072z-lrwan1/], to perform large-scale evaluations
+* (Locally) Real local node [ST B-L072Z-LRWAN1](https://www.st.com/en/evaluation-tools/b-l072z-lrwan1.html), which makes use of LoRa modules and Turbidity and pH sensors
+* (Remotely) FIT IoT-LAB Testbed, which provide #25 [ST B-L072Z-LRWAN1](https://www.iot-lab.info/docs/boards/st-b-l072z-lrwan1/), to perform large-scale evaluations
 
 The evaluation of each paramenter includes:
 * Explanation of the evaluation methodology, 
@@ -17,26 +17,23 @@ The evaluation of each paramenter includes:
 
 ## Index
 1. [User eXperience and satisfaction](#User-eXperience-and-satisfaction)
-2. [Power consumption](Evaluation.md/#Power-consumption)
-3. [Network technology assessment](Evaluation.md/#Network-technology-assessment)
-4. [Security and Privacy](Evaluation.md/#Security-and-Privacy)
-5. [Cost](Evaluation.md/#Cost)
+2. [Power consumption](#Power-consumption)
+3. [Network technology assessment](#Network-technology-assessment)
+4. [Security and Privacy](#Security-and-Privacy)
 
 ## User eXperience and satisfaction 
 As Don Norman and Jakob Nielsen state:
 > User-experience encompasses all the aspects of the end-user's interaction with the company, its services and its products.
 
 ### Evaluation methodology
-Since the end-user is the key element for the project it is important to analyse the user satisfaction degree during the project development and when the first release of HarbourWasteControl will be available. In order to this, two different surveys ([Middle-term survey](/Evaluation#Middle-term-survery), [First-release survey](/Evaluation#First-release-survey)) will be carried out to a pool of real shipowners, the one already involved in [Concept](/Concept.md).
+Since the end-user is the key element for the project it is important to analyse the user satisfaction degree during the project development. In order to this, the survey in [Concept.md](/Concept.md#2-shipowners-point-of-view) is involved.
  
-The aim of the survey is to test the ship commanders’ level of knowledge of wastewater draining procedures. Afterwards participants are asked to express their opinion about the introduction of a technological system for water quality measurement to prevent the illegal draining of waste substances in the docks.
+The aim of the survey is to test the ship commanders’ level of knowledge of wastewater draining procedures. Afterwards participants are asked to express their opinion about the introduction of a technological system for water quality measurement to prevent the illegal draining of waste substances in the docks. For further details, i.e. actual outcomes, please refer to [Concept.md](/Concept.md#2-shipowners-point-of-view)
 
 ### Perfomance indicators
-Middle-term survey
-
 Indicator name | Description
 ------------ | -------------
-Desidered HarbourWasteControl characteristics | list of potential functionalities that shipowner would like to add
+Desired characteristics | Lst of potential functionalities that shipowner would like to add
 Interest of pullution data produced by HWC | four different levels of ascending interest
 Way of communication | list of possible media to receive HWC information 
 
