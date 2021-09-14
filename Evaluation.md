@@ -9,6 +9,10 @@ These paramenters come from the recommendations provided during the [IoT 2021 co
 The following evaluation concerns both the one perfomed during the development phase and the one undertaken at the end of the project. Furthermore the evaluation is conducted at two different places:
 * (Locally) Real local node [ST B-L072Z-LRWAN1](https://www.st.com/en/evaluation-tools/b-l072z-lrwan1.html), which makes use of LoRa modules and Turbidity and pH sensors
 * (Remotely) FIT IoT-LAB Testbed, which provide #25 [ST B-L072Z-LRWAN1](https://www.iot-lab.info/docs/boards/st-b-l072z-lrwan1/), to perform large-scale evaluations
+  * **NOTE** Because of the use of a remote testbed, it is not possible to connect intended sensors physically, pH sensor and Turbidity ones, in remote boards. There is no possibility to get real data from the sensors and so no pH alteration and Tubidity variations occurs (like conversely they happen in ```st-lrwan1-local```). 
+  * To deal with this problem we have followed **Dataset traces** approach proposed throughout Lecture 11. In particular remote boards rely on ('''The Water Quality dataset''')[https://www.kaggle.com/adityakadiwal/water-potability] by Kaggle.com - Aditya Kadiwal. It is a CSV dataset contains water quality metrics for **3276 different water bodies**, therfore real data about pH and Turbidity like the one retrieved by the real local node. In this way it possible to **simulate** behaviour of pH and Turbidity sensor with actual data as they were physically connected
+![Dataset](/Picture/Dataset.png)
+
 
 The evaluation of each paramenter includes:
 * Explanation of the evaluation methodology, 
@@ -106,3 +110,4 @@ Use the security protocol offered by LoRaWAN 1.0 that specifies the use of a num
 * https://www.google.com/intl/en-GB/forms/about/
 * https://en.wikipedia.org/wiki/Google_Forms
 * http://www.elemania.altervista.org/basi/schemi/schemi1c.html
+* https://www.kaggle.com/adityakadiwal/water-potability
