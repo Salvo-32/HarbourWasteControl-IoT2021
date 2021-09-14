@@ -4,15 +4,13 @@ These paramenters come from the recommendations provided during the [IoT 2021 co
 * Lecture 9 - UI/UX for IoT - [Prof. Ioannis Chatzigiannakis](https://github.com/ichatz)
 * Lecture 11 - Performance Evaluation for IoT - [Prof. Andrea Vitaletti](https://github.com/andreavitaletti).
 * Lecture 13 - LoRa networks - [Prof. Ioannis Chatzigiannakis](https://github.com/ichatz)
-* Lecture 20 - Privacy Preserving Computation - [Prof. Andrea Vitaletti](https://github.com/andreavitaletti)
  
 The following evaluation concerns both the one perfomed during the development phase and the one undertaken at the end of the project. Furthermore the evaluation is conducted at two different places:
-* (Locally) Real local node [ST B-L072Z-LRWAN1](https://www.st.com/en/evaluation-tools/b-l072z-lrwan1.html), which makes use of LoRa modules and Turbidity and pH sensors
-* (Remotely) FIT IoT-LAB Testbed, which provide #25 [ST B-L072Z-LRWAN1](https://www.iot-lab.info/docs/boards/st-b-l072z-lrwan1/), to perform large-scale evaluations
+* (Locally) Real local node [ST B-L072Z-LRWAN1](https://www.st.com/en/evaluation-tools/b-l072z-lrwan1.html) ```st-lrwan1-local```, which makes use of LoRa modules and Turbidity and pH sensors
+* (Remotely) FIT IoT-LAB Testbed, which provide #25 [ST B-L072Z-LRWAN1](https://www.iot-lab.info/docs/boards/st-b-l072z-lrwan1/) ```st-lrwan1-1```-```st-lrwan1-25```, to perform large-scale evaluations
   * **NOTE** Because of the use of a remote testbed, it is not possible to connect intended sensors physically, pH sensor and Turbidity ones, in remote boards. There is no possibility to get real data from the sensors and so no pH alteration and Tubidity variations occurs (like conversely they happen in ```st-lrwan1-local```). 
-  * To deal with this problem we have followed **Dataset traces** approach proposed throughout Lecture 11. In particular remote boards rely on [The Water Quality dataset](https://www.kaggle.com/adityakadiwal/water-potability) by Kaggle.com - Aditya Kadiwal. It is a CSV dataset contains water quality metrics for **3276 different water bodies**, therfore real data about pH and Turbidity like the one retrieved by the real local node. In this way it possible to **simulate** behaviour of pH and Turbidity sensor with actual data as they were physically connected
+  * To deal with this problem we have followed **Dataset traces** approach proposed throughout Lecture 11. In particular remote boards rely on [The Water Quality dataset](https://www.kaggle.com/adityakadiwal/water-potability) by Kaggle.com - Aditya Kadiwal. It is a CSV dataset containing water quality metrics for **3276 different water bodies**, in particular remote boards retrieve the two desired values from the dataset locally. In this way it possible to **simulate** behaviour of pH and Turbidity sensor with actual data as they were physically connected
 ![Dataset](/Picture/Dataset.png)
-
 
 The evaluation of each paramenter includes:
 * Explanation of the evaluation methodology, 
@@ -24,7 +22,6 @@ The evaluation of each paramenter includes:
 1. [User eXperience and satisfaction](#User-eXperience-and-satisfaction)
 2. [Power consumption](#Power-consumption)
 3. [Network technology assessment/Network performace](#Network-technology-assessment)
-4. [Security and Privacy](#Security-and-Privacy)
 
 ## 1. User eXperience and satisfaction 
 As Don Norman and Jakob Nielsen state:
@@ -98,13 +95,9 @@ Thanks to *Data Aggregation*, number of LoRa packets decreases therefore less cu
 6. ```plot_oml_consum --input ~/.iot-lab/277099/consumption/st_lrwan1_5.oml --power --label "Endpoint (stlrwan1-5) - Power consumption analysis - Exp ID 277099"```
 ![277099_stlrwan1-5_PowerMonitoring](./Picture/Evaluation/277099_stlrwan1-5_PowerMonitoring.png)
 
-
-
 ## 3. Network technology assessment
 ### Network traffic analysis
 
-## 4. Security and Privacy 
-Use the security protocol offered by LoRaWAN 1.0 that specifies the use of a number of security keys: NwkSKey, AppSKey and AppKey. All keys have a length of 128 bits, the algorithm used is AES-128. Before a node can exchange messages in the LoRaWAN network, activation procedure has to be finished. For the project we use Over-the-Air Activation (OTAA) method.
 
 ## Sources
 * https://www.google.com/intl/en-GB/forms/about/
