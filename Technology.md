@@ -12,10 +12,12 @@ In order to inspect and predict the quality of port waters, HarbourWasteControl 
 **NOTE** We are perfectly aware that the physical quantities involved in this project, namely pH – temperature – Total Suspended Solids, are not enough to point out water pollution phenomenon inside a real harbour, since a complete analysis require a deeper study performed in a lab.
 
 But according to the [Legislative decree 152/06](https://www.gazzettaufficiale.it/atto/serie_generale/caricaArticolo?art.progressivo=0&art.idArticolo=5&art.versione=1&art.codiceRedazionale=006G0171&art.dataPubblicazioneGazzetta=2006-04-14&art.idGruppo=54&art.idSottoArticolo1=10&art.idSottoArticolo=1&art.flagTipoArticolo=2), which regulates analysis of superficial waters, these parameters are among the fundamental one to be analyzed **immediately** at the sampling time and before the evaluation of water samples in laboratory, (regardless of context, type of environmental water) to 
+
 So data provided by the sensor nodes spread all over the harbour, are the starting point for a more complex analysis and can reduce the workload of authorised personnel during sampling activity because these  don’t care about these parameters. In the end we use these sensors to build a model to predict the spread of water pollution inside the harbour. Give their importance they belong to “Parametri I gruppo”
+
 ![dlgs-152-06.png](Picture/Technology/dlgs-152-06.png)
 
-##[High-level design & Components]
+## High-level design & Components
 Implementation and Deploymnent of HWC follows design proposed during *Lecture 11 - Performance Evaluation for IoT* by [Prof. Andrea Vitaletti](https://github.com/andreavitaletti) and therefore involves two different places:
 1. Real local node at our home
 2. [FIT IoT-LAB Testbed](https://www.iot-lab.info)
