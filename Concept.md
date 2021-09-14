@@ -1,6 +1,6 @@
 # HarbourWasteControl IoT 2021 - Concept
 
-In order to inspect the quality of port waters, HarbourWasteControl takes into consideration/account the exigences of the two main user personas involved in the matter in hand
+In order to inspect the quality of port waters, HarbourWasteControl takes into account the needs of two main user personas involved in the matter in hand
 1. The harbour managing authority 
 2. The shipowners through online surveys to a pool of real owners  
 
