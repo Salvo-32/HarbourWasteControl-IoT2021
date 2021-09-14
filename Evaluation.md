@@ -54,8 +54,16 @@ Processing the data of the survey, it is possible to clearly infer that:
 4. Eventually, the shipowners would appreciate this service more whether the port managing authority offered them discounts with respect to the harbour fees
 
 ## 2. Power consumption
-This assesment analyses energy consumption of both real node and remote nodes, by measuring current and power levels during [firmware](Demo/main.c) is running on. 
+This assesment analyses energy consumption of both real node and remote nodes, by measuring current and power levels during [firmware](Demo/main.c) is running on.
+As of [Technology.md](/Technology.md) main hardware components involved in the project have the following max power consumption:
+- [ST B-L072Z-LRWAN1](https://www.st.com/en/evaluation-tools/b-l072z-lrwan1.html) 
 
+Component | Operating Voltage | Operating Current
+------------ | -------------- | --------------
+[LoRa module CMWX1ZZABZ-091](https://www.murata.com/en-eu/products/connectivitymodule/lpwa/overview/lineup/type-abz-078)  |        3.9V DC       | 128 mA (MAX)
+[Turbidity sensor SKU SEN0189](https://wiki.dfrobot.com/Turbidity_sensor_SKU__SEN0189) |  5V DC         | 40 mA (MAX)
+[pH sensor SKU SEN0161](https://wiki.dfrobot.com/PH_meter_SKU__SEN0161_) |  5V DC         | 57 mA (MAX)
+  
 ### Evaluation methodology
 For the real node, current analysis takes place between the USB power supply and the acutual board. In particular a digital multimeter is connected in series as shown below. Every 10 seconds (sampling rate) for a period of 10 minutes, current shown in the multimeter's display is manually reported inside an OML file and then plotted using [OML plotting tool](https://www.iot-lab.info/docs/tools/consumption-monitoring/) by FIT IoT-LAB
 
