@@ -4,7 +4,7 @@ In order to inspect the quality of port waters, HarbourWasteControl takes into a
 1. The harbour managing authority 
 2. The shipowners through online surveys to a pool of real owners  
 
-## 1. Harbour managing authority's point of view
+## 1. Harbour managing authority's point of view (Problem description)
 The [Legislative decree of 24th JUNE 2003, N.182](https://www.camera.it/parlam/leggi/deleghe/03182dl.htm) is the fulfilment in Italy of the [**European directive 2000/59/CE**](https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=celex:32000L0059) with the aim (Art.1 - Objectives) of reducing the illegal discharge of wastewater in the sea (toilet waters, tank/hold washing waters, also called Slop(Art.2 - Definitions)), produced by the ships in the Italian ports.
 
 According to that decree, any kind of ship (hydrofoils, fishing boats, pleasure boats with sports/recreative aims, submarines), except military ships, has to notify port authority, using the proper form (Art.6 - Notification), the necessity of draining the estimated quantity of wastewater. All port authorities have to be equipped with port reception facilities in order to dispose of the waste in a safe way (Art.4). Obviously, the above mentioned service foresees the payment of rates  by the ship commander  (Art.8 - Tariff system applicable to the waste materials produced by the ship).
