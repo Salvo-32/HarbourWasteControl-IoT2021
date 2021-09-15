@@ -67,8 +67,10 @@ Lora classify end nodes in three differnet classes. The sensor nodes are conside
 
 <img src="https://github.com/Salvo-32/HarbourWasteControl-IoT2021/blob/main/Picture/architecture2.png" width="500">
 
-
-#### Sources
+## Previous versions of this document
+* First version of the Technology file can be found [here](https://github.com/Salvo-32/HarbourWasteControl-IoT2021/commit/7d0e3af6be97fbf73ec4216a8a605ca5a9a2ab31#diff-75a727463ac876d2271705ddc7aa2d52ab233a5aea327af2c101a2253b36dace)
+* Second version of the Technology file can be found [here](https://github.com/Salvo-32/HarbourWasteControl-IoT2021/commit/a9c94a305ee14f47f58a38c6ae2c10a75160ea4d#diff-75a727463ac876d2271705ddc7aa2d52ab233a5aea327af2c101a2253b36dace)
+## Sources
 1. https://wiki.dfrobot.com/Turbidity_sensor_SKU__SEN0189
 2. https://wiki.dfrobot.com/PH_meter_SKU__SEN0161_
 3. https://www.gazzettaufficiale.it/atto/serie_generale/caricaArticolo?art.progressivo=0&art.idArticolo=5&art.versione=1&art.codiceRedazionale=006G0171&art.dataPubblicazioneGazzetta=2006-04-14&art.idGruppo=54&art.idSottoArticolo1=10&art.idSottoArticolo=1&art.flagTipoArticolo=2
