@@ -31,18 +31,15 @@ At home we demonstrate the use of real sensors through local real board for HWC
 
 ### Components
 1. The [B-L072Z-LRWAN1](https://www.st.com/en/evaluation-tools/b-l072z-lrwan1.html) is a development board to learn and develop solutions based on LoRa®, Sigfox™, and FSK/OOK technologies. It hosts pH and Turbidity **sensors**, On-board LEDs that act as **actuators** to inform user of board status, and LoRa module for **network communications** of data. Further information in the following paragraphs
-2. The [Turbidity sensor SKU SEN0189](https://wiki.dfrobot.com/Turbidity_sensor_SKU__SEN0189) analyses water quality by measuring the levels of turbidity, or the opaqueness. It uses light to detect suspended particles in water by measuring the light transmittance and scattering rate, which changes with the amount of total suspended solids (TSS) in water. As the TTS increases, the liquid turbidity level increases. Turbidity sensors are used to measure water quality in rivers and streams, wastewater and effluent measurements, control instrumentation for settling ponds, sediment transport research and laboratory measurements. This liquid sensor provides analog and digital signal output modes. The threshold is adjustable when in digital signal mode. You can select the mode according to your MCU. 
-![TurbiditySensor-SEN0189.png](Picture/Technology/TurbiditySensor-SEN0189.png)
-3. The [pH meter SKU SEN0161](https://wiki.dfrobot.com/PH_meter_SKU__SEN0161_) measure the pH, a scale used to specify the acidity or basicity of an aqueous solution. The pH of seawater is typically limited to a range between 7 and 8, and it plays an important role in the ocean's carbon cycle. The sensor works with a probe attached to the BNC connector, while the board must be connected using PH2.0 port. Its power consume doesn't exceed 10mA.
-![PhMeter-SEN0161.jpg](Picture/Technology/PhMeter-SEN0161.jpg)
+2. The [Turbidity sensor SKU SEN0189](https://wiki.dfrobot.com/Turbidity_sensor_SKU__SEN0189) analyses water quality by measuring the levels of turbidity, or the opaqueness. It uses light to detect suspended particles in water by measuring the light transmittance and scattering rate, which changes with the amount of total suspended solids (TSS) in water. As the TTS increases, the liquid turbidity level increases. Turbidity sensors are used to measure water quality in rivers and streams, wastewater and effluent measurements, control instrumentation for settling ponds, sediment transport research and laboratory measurements. This liquid sensor provides analog and digital signal output modes. The threshold is adjustable when in digital signal mode. You can select the mode according to your MCU. ![TurbiditySensor-SEN0189.png](Picture/Technology/TurbiditySensor-SEN0189.png)
+3. The [pH meter SKU SEN0161](https://wiki.dfrobot.com/PH_meter_SKU__SEN0161_) measure the pH, a scale used to specify the acidity or basicity of an aqueous solution. The pH of seawater is typically limited to a range between 7 and 8, and it plays an important role in the ocean's carbon cycle. The sensor works with a probe attached to the BNC connector, while the board must be connected using PH2.0 port. Its power consume doesn't exceed 10mA. ![PhMeter-SEN0161.jpg](Picture/Technology/PhMeter-SEN0161.jpg)
 4. [Modica (RG) TheThingsNetwork LoRa Gateway](https://www.thethingsnetwork.org/) - which is a **public Outdoor** LoRa concentrator/gateway provided by [TheThingsNetwork](https://www.thethingsnetwork.org/). It allows the real local node above to access TTN LoRaWAN Network Server.  
 
 Gateway ID           | Name            | Altitude | Placement | Brand   | Model   | Antenna
 -------------------- | --------------- | -------- | --------- | -----   | ------- | ---------------------
 eui-7076ff0056050a22 | kerlink-station | 13       | Outdoor   | Kerlink | Station | Procom CXL 900-6LW-NB
 
-![Pozzallo1-TheThingsNetwork.png]((/Picture/Technology/Pozzallo1-TheThingsNetwork.png))
-![Pozzallo2-TheThingsNetwork.png]((/Picture/Technology/Pozzallo2-TheThingsNetwork.png))
+![Pozzallo1-TheThingsNetwork.png](/Picture/Technology/Pozzallo1-TheThingsNetwork.png)
 
 Component    | Operating Voltage | Operating Current
 ------------ | ----------------- | --------------
@@ -58,23 +55,25 @@ It follows from the official [DFRobot.com wiki](https://wiki.dfrobot.com) of the
 * [https://wiki.dfrobot.com/Turbidity_sensor_SKU__SEN0189#target_2](https://wiki.dfrobot.com/Turbidity_sensor_SKU__SEN0189#target_2)
 
 ## 2. FIT IoT-LAB Testbed
-* (Remotely) FIT IoT-LAB Testbed, which provide #25 [ST B-L072Z-LRWAN1](https://www.iot-lab.info/docs/boards/st-b-l072z-lrwan1/) ```st-lrwan1-1```-```st-lrwan1-25```, to perform large-scale evaluations
+IoT-LAB is a facility suitable for testing networking with small wireless sensor devices and heterogeneous communicating objects. In our scenario it is used to scale-up HWC over five different nodes
+
+### Components
+1. FIT IoT-LAB Testbed, which provides #25 [ST B-L072Z-LRWAN1](https://www.iot-lab.info/docs/boards/st-b-l072z-lrwan1/). HWC uses 5 out of 25 remote boards ```st-lrwan1-1```-```st-lrwan1-5``` to perform large-scale evaluations
   * **NOTE** Because of the use of a remote testbed, it is not possible to connect intended sensors physically, pH sensor and Turbidity ones, in remote boards. There is no possibility to get real data from the sensors and so no pH alteration and Tubidity variations occurs (like conversely they happen in ```st-lrwan1-local```). 
-  * To deal with this problem we have followed **Dataset traces** approach proposed throughout Lecture 11. In particular remote boards rely on [The Water Quality dataset](https://www.kaggle.com/adityakadiwal/water-potability) by Kaggle.com - Aditya Kadiwal. It is a CSV dataset containing water quality metrics for **3276 different water bodies**, in particular remote boards retrieve the two desired values from the dataset locally. In this way it possible to **simulate** behaviour of pH and Turbidity sensor with actual data as they were physically connected
+2. To deal with this problem we have followed **Dataset traces** approach proposed throughout Lecture 11. In particular remote boards rely on [The Water Quality dataset](https://www.kaggle.com/adityakadiwal/water-potability) by Kaggle.com - Aditya Kadiwal. It is a CSV dataset containing water quality metrics for **3276 different water bodies**, in particular remote boards retrieve the two desired values from the dataset locally. In this way it possible to **simulate** behaviour of pH and Turbidity sensor with actual data as they were physically connected
 ![Dataset](/Picture/Dataset.png)
+3. Saclay TTN LoRa gateway, which is a **public** LoRa concentrator/gateway provided by [TheThingsNetwork](https://www.thethingsnetwork.org/). It allows the real local node above to access TTN LoRaWAN Network Server. 
 
  	http://www.usamahkhan.com/projects/spatial-interpolation
-  
 
-## Architecture
+## Architecture - Network diagram (Physical devices and Protocols)
 When the sensor nodes are deployed their geographical location are hardcoded in their firmware. The sensor node is composed of a  **ST B-L072Z-LRWAN1**, one **pH sensor**, one **Turbidity sensor** SKU SEN0189. The board will run **RIOT OS** used to make it as easy as possible the coding of network functionalities and sensor drivers. The nodes read the data coming from the sensors and send it to a gateway. The gateway then will send the data to the cloud.
 
 For the cloud-based backend services, we use AWS. The data received is strored in a **DynamoDB** table, it is fetched periodically and then analyzed by applying a method of interpolationan called **ùng**. The user has the possibility to view the result of the analysis analysis and the data collected from a dashboard. A **Flask** app running on an **AWS EC2** Instance will be responsible to run the analysis and the dashboard.
 
-## Networking
 The sensor node and the gateway comunicate via **LoRa**. The Lora gateway then sends the data to **TheThingsNewtork**, also known as TTN, then finally is sent to **AWS IoT**.
 
-Lora classify end nodes in three differnet classes. The sensor nodes are considered Class A, battery powered sensor with no latency constraint, while the gateway is class C, because it can listen all the time for data.
+LoRa classify end nodes in three differnet classes. The sensor nodes are considered Class A, battery powered sensor with no latency constraint, while the gateway is class C, because it can listen all the time for data.
 
 ![Image1](Picture/architecture_final.png)
 
@@ -84,6 +83,7 @@ Lora classify end nodes in three differnet classes. The sensor nodes are conside
 ## Previous versions of this document
 * First version of the Technology file can be found [here](https://github.com/Salvo-32/HarbourWasteControl-IoT2021/blob/7d0e3af6be97fbf73ec4216a8a605ca5a9a2ab31/Technology.md)
 * Second version of the Technology file can be found [here](https://github.com/Salvo-32/HarbourWasteControl-IoT2021/blob/a9c94a305ee14f47f58a38c6ae2c10a75160ea4d/Technology.md)
+
 ## Sources
 1. https://wiki.dfrobot.com/Turbidity_sensor_SKU__SEN0189
 2. https://wiki.dfrobot.com/PH_meter_SKU__SEN0161_
