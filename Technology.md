@@ -31,15 +31,15 @@ At home we demonstrate the use of real sensors through local real board for HWC
 
 ### Components
 1. The [B-L072Z-LRWAN1](https://www.st.com/en/evaluation-tools/b-l072z-lrwan1.html) is a development board to learn and develop solutions based on LoRa®, Sigfox™, and FSK/OOK technologies. It hosts pH and Turbidity **sensors**, On-board LEDs that act as **actuators** to inform user of board status, and LoRa module for **network communications** of data. Further information in the following paragraphs
-2. The [Turbidity sensor SKU SEN0189](https://wiki.dfrobot.com/Turbidity_sensor_SKU__SEN0189) analyses water quality by measuring the levels of turbidity, or the opaqueness. It uses light to detect suspended particles in water by measuring the light transmittance and scattering rate, which changes with the amount of total suspended solids (TSS) in water. As the TTS increases, the liquid turbidity level increases. Turbidity sensors are used to measure water quality in rivers and streams, wastewater and effluent measurements, control instrumentation for settling ponds, sediment transport research and laboratory measurements. This liquid sensor provides analog and digital signal output modes. The threshold is adjustable when in digital signal mode. You can select the mode according to your MCU. ![TurbiditySensor-SEN0189.png](Picture/Technology/TurbiditySensor-SEN0189.png)
-3. The [pH meter SKU SEN0161](https://wiki.dfrobot.com/PH_meter_SKU__SEN0161_) measure the pH, a scale used to specify the acidity or basicity of an aqueous solution. The pH of seawater is typically limited to a range between 7 and 8, and it plays an important role in the ocean's carbon cycle. The sensor works with a probe attached to the BNC connector, while the board must be connected using PH2.0 port. Its power consume doesn't exceed 10mA. ![PhMeter-SEN0161.jpg](Picture/Technology/PhMeter-SEN0161.jpg)
+2. The [Turbidity sensor SKU SEN0189](https://wiki.dfrobot.com/Turbidity_sensor_SKU__SEN0189) analyses water quality by measuring the levels of turbidity, or the opaqueness. It uses light to detect suspended particles in water by measuring the light transmittance and scattering rate, which changes with the amount of total suspended solids (TSS) in water. As the TTS increases, the liquid turbidity level increases. Turbidity sensors are used to measure water quality in rivers and streams, wastewater and effluent measurements, control instrumentation for settling ponds, sediment transport research and laboratory measurements. This liquid sensor provides analog and digital signal output modes. The threshold is adjustable when in digital signal mode. You can select the mode according to your MCU.
+3. The [pH meter SKU SEN0161](https://wiki.dfrobot.com/PH_meter_SKU__SEN0161_) measure the pH, a scale used to specify the acidity or basicity of an aqueous solution. The pH of seawater is typically limited to a range between 7 and 8, and it plays an important role in the ocean's carbon cycle. The sensor works with a probe attached to the BNC connector, while the board must be connected using PH2.0 port. Its power consume doesn't exceed 10mA.
 4. [Modica (RG) TheThingsNetwork LoRa Gateway](https://www.thethingsnetwork.org/) - which is a **public Outdoor** LoRa concentrator/gateway provided by [TheThingsNetwork](https://www.thethingsnetwork.org/). It allows the real local node above to access TTN LoRaWAN Network Server.  
 
-Gateway ID           | Name            | Altitude | Placement | Brand   | Model   | Antenna
--------------------- | --------------- | -------- | --------- | -----   | ------- | ---------------------
-eui-7076ff0056050a22 | kerlink-station | 13       | Outdoor   | Kerlink | Station | Procom CXL 900-6LW-NB
+    Gateway ID           | Name            | Altitude | Placement | Brand   | Model   | Antenna
+    -------------------- | --------------- | -------- | --------- | -----   | ------- | ---------------------
+    eui-7076ff0056050a22 | kerlink-station | 13       | Outdoor   | Kerlink | Station | Procom CXL 900-6LW-NB
 
-![Pozzallo1-TheThingsNetwork.png](/Picture/Technology/Pozzallo1-TheThingsNetwork.png)
+    ![Pozzallo1-TheThingsNetwork.png](/Picture/Technology/Pozzallo1-TheThingsNetwork.png)
 
 Component    | Operating Voltage | Operating Current
 ------------ | ----------------- | --------------
