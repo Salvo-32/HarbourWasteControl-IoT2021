@@ -91,20 +91,21 @@ Thanks to *Data Aggregation*, number of LoRa packets decreases therefore less cu
 ![DataAggregation](/Picture/DataAggregation.png)
 
 1. ```plot_oml_consum --input ~/.iot-lab/277099/consumption/st_lrwan1_local.oml --power --label "Endpoint (stlrwan1-local) - Power consumption analysis - Exp ID 277099"``` 
-![277099_stlrwan1-local_PowerMonitoring](./Picture/Evaluation/277099_stlrwan1-local_PowerMonitoring.png)
+  ![277099_stlrwan1-local_PowerMonitoring](./Picture/Evaluation/277099_stlrwan1-local_PowerMonitoring.png)
 3. ```plot_oml_consum --input ~/.iot-lab/277099/consumption/st_lrwan1_1.oml --power --label "Endpoint (stlrwan1-1) - Power consumption analysis - Exp ID 277099"``` 
-![277099_stlrwan1-1_PowerMonitoring](./Picture/Evaluation/277099_stlrwan1-1_PowerMonitoring.png)
+  ![277099_stlrwan1-1_PowerMonitoring](./Picture/Evaluation/277099_stlrwan1-1_PowerMonitoring.png)
 5. ```plot_oml_consum --input ~/.iot-lab/277099/consumption/st_lrwan1_2.oml --power --label "Endpoint (stlrwan1-2) - Power consumption analysis - Exp ID 277099"```
-![277099_stlrwan1-2_PowerMonitoring](./Picture/Evaluation/277099_stlrwan1-2_PowerMonitoring.png)
+  ![277099_stlrwan1-2_PowerMonitoring](./Picture/Evaluation/277099_stlrwan1-2_PowerMonitoring.png)
 4. ```plot_oml_consum --input ~/.iot-lab/277099/consumption/st_lrwan1_3.oml --power --label "Endpoint (stlrwan1-3) - Power consumption analysis - Exp ID 277099"```
-![277099_stlrwan1-3_PowerMonitoring](./Picture/Evaluation/277099_stlrwan1-3_PowerMonitoring.png)
+  ![277099_stlrwan1-3_PowerMonitoring](./Picture/Evaluation/277099_stlrwan1-3_PowerMonitoring.png)
 5. ```plot_oml_consum --input ~/.iot-lab/277099/consumption/st_lrwan1_4.oml --power --label "Endpoint (stlrwan1-4) - Power consumption analysis - Exp ID 277099"```
-![277099_stlrwan1-4_PowerMonitoring](./Picture/Evaluation/277099_stlrwan1-4_PowerMonitoring.png)
+  ![277099_stlrwan1-4_PowerMonitoring](./Picture/Evaluation/277099_stlrwan1-4_PowerMonitoring.png)
 6. ```plot_oml_consum --input ~/.iot-lab/277099/consumption/st_lrwan1_5.oml --power --label "Endpoint (stlrwan1-5) - Power consumption analysis - Exp ID 277099"```
-![277099_stlrwan1-5_PowerMonitoring](./Picture/Evaluation/277099_stlrwan1-5_PowerMonitoring.png)
+  ![277099_stlrwan1-5_PowerMonitoring](./Picture/Evaluation/277099_stlrwan1-5_PowerMonitoring.png)
 
 ## 3. Network technology assessment
 ### Network traffic analysis
+
 
 ## Previous versions of this document
 * First version of the Evaluation file can be found [here](https://github.com/Salvo-32/HarbourWasteControl-IoT2021/blob/63498dc245cb5c845ba2694d265e2b9771869f05/Evaluation.md)
