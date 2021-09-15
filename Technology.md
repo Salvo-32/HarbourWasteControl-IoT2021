@@ -27,7 +27,37 @@ Implementation and Deploymnent of HWC follows design proposed during *Lecture 11
 The following sections describe in detail Hardware and Software deployed in each of the two workspaces above.
 
 ## 1. Real local node at our home
-Real local node [ST B-L072Z-LRWAN1](https://www.st.com/en/evaluation-tools/b-l072z-lrwan1.html) ```st-lrwan1-local```, which directly makes use of LoRa modules and Turbidity and pH sensors 
+At home we demonstrate the use of real sensors through local real board for HWC
+
+### Components
+1. The [B-L072Z-LRWAN1](https://www.st.com/en/evaluation-tools/b-l072z-lrwan1.html) is a development board to learn and develop solutions based on LoRa®, Sigfox™, and FSK/OOK technologies. It hosts pH and Turbidity **sensors**, On-board LEDs that act as **actuators** to inform user of board status, and LoRa module for **network communications** of data. Further information in the following paragraphs
+2. The [Turbidity sensor SKU SEN0189](https://wiki.dfrobot.com/Turbidity_sensor_SKU__SEN0189) analyses water quality by measuring the levels of turbidity, or the opaqueness. It uses light to detect suspended particles in water by measuring the light transmittance and scattering rate, which changes with the amount of total suspended solids (TSS) in water. As the TTS increases, the liquid turbidity level increases. Turbidity sensors are used to measure water quality in rivers and streams, wastewater and effluent measurements, control instrumentation for settling ponds, sediment transport research and laboratory measurements. This liquid sensor provides analog and digital signal output modes. The threshold is adjustable when in digital signal mode. You can select the mode according to your MCU. 
+![TurbiditySensor-SEN0189.png](Picture/Technology/TurbiditySensor-SEN0189.png)
+3. The [pH meter SKU SEN0161](https://wiki.dfrobot.com/PH_meter_SKU__SEN0161_) measure the pH, a scale used to specify the acidity or basicity of an aqueous solution. The pH of seawater is typically limited to a range between 7 and 8, and it plays an important role in the ocean's carbon cycle. The sensor works with a probe attached to the BNC connector, while the board must be connected using PH2.0 port. Its power consume doesn't exceed 10mA.
+![PhMeter-SEN0161.jpg](Picture/Technology/PhMeter-SEN0161.jpg)
+4. [Modica (RG) TheThingsNetwork LoRa Gateway](https://www.thethingsnetwork.org/) - which is a **public Outdoor** LoRa concentrator/gateway provided by [TheThingsNetwork](https://www.thethingsnetwork.org/). It allows the real local node above to access TTN LoRaWAN Network Server.  
+
+Gateway ID           | Name            | Altitude | Placement | Brand   | Model   | Antenna
+-------------------- | --------------- | -------- | --------- | -----   | ------- | ---------------------
+eui-7076ff0056050a22 | kerlink-station | 13       | Outdoor   | Kerlink | Station | Procom CXL 900-6LW-NB
+
+![Pozzallo1-TheThingsNetwork.png]((/Picture/Technology/Pozzallo1-TheThingsNetwork.png))
+![Pozzallo2-TheThingsNetwork.png]((/Picture/Technology/Pozzallo2-TheThingsNetwork.png))
+
+Component    | Operating Voltage | Operating Current
+------------ | ----------------- | --------------
+[LoRa module CMWX1ZZABZ-091](https://www.murata.com/en-eu/products/connectivitymodule/lpwa/overview/lineup/type-abz-078)  |        3.9V DC       | 128 mA (MAX)
+[Turbidity sensor SKU SEN0189](https://wiki.dfrobot.com/Turbidity_sensor_SKU__SEN0189) |  5V DC         | 40 mA (MAX)
+[pH meter SKU SEN0161](https://wiki.dfrobot.com/PH_meter_SKU__SEN0161_) |  5V DC         | 57 mA (MAX)
+
+The next circuit depict all necessary wirings:
+![Circuit](/Picture/Technology/Circuit.png)
+
+It follows from the official [DFRobot.com wiki](https://wiki.dfrobot.com) of the realtive product:
+* [https://wiki.dfrobot.com/PH_meter_SKU__SEN0161_#target_4](https://wiki.dfrobot.com/PH_meter_SKU__SEN0161_#target_4)
+* [https://wiki.dfrobot.com/Turbidity_sensor_SKU__SEN0189#target_2](https://wiki.dfrobot.com/Turbidity_sensor_SKU__SEN0189#target_2)
+
+## 2. FIT IoT-LAB Testbed
 * (Remotely) FIT IoT-LAB Testbed, which provide #25 [ST B-L072Z-LRWAN1](https://www.iot-lab.info/docs/boards/st-b-l072z-lrwan1/) ```st-lrwan1-1```-```st-lrwan1-25```, to perform large-scale evaluations
   * **NOTE** Because of the use of a remote testbed, it is not possible to connect intended sensors physically, pH sensor and Turbidity ones, in remote boards. There is no possibility to get real data from the sensors and so no pH alteration and Tubidity variations occurs (like conversely they happen in ```st-lrwan1-local```). 
   * To deal with this problem we have followed **Dataset traces** approach proposed throughout Lecture 11. In particular remote boards rely on [The Water Quality dataset](https://www.kaggle.com/adityakadiwal/water-potability) by Kaggle.com - Aditya Kadiwal. It is a CSV dataset containing water quality metrics for **3276 different water bodies**, in particular remote boards retrieve the two desired values from the dataset locally. In this way it possible to **simulate** behaviour of pH and Turbidity sensor with actual data as they were physically connected
@@ -35,22 +65,6 @@ Real local node [ST B-L072Z-LRWAN1](https://www.st.com/en/evaluation-tools/b-l07
 
  	http://www.usamahkhan.com/projects/spatial-interpolation
   
-## Components
-To the aim of HWC the following components are involved:
-- The [B-L072Z-LRWAN1](https://www.st.com/en/evaluation-tools/b-l072z-lrwan1.html) is a development board to learn and develop solutions based on LoRa®, Sigfox™, and FSK/OOK technologies..
-- The [Turbidity sensor SKU SEN0189](https://wiki.dfrobot.com/Turbidity_sensor_SKU__SEN0189) analyses water quality by measuring the levels of turbidity, or the opaqueness. It uses light to detect suspended particles in water by measuring the light transmittance and scattering rate, which changes with the amount of total suspended solids (TSS) in water. As the TTS increases, the liquid turbidity level increases. Turbidity sensors are used to measure water quality in rivers and streams, wastewater and effluent measurements, control instrumentation for settling ponds, sediment transport research and laboratory measurements. This liquid sensor provides analog and digital signal output modes. The threshold is adjustable when in digital signal mode. You can select the mode according to your MCU. 
-![TurbiditySensor-SEN0189.png](Picture/Technology/TurbiditySensor-SEN0189.png)
-- The [pH meter SKU SEN0161](https://wiki.dfrobot.com/PH_meter_SKU__SEN0161_) measure the pH, a scale used to specify the acidity or basicity of an aqueous solution. The pH of seawater is typically limited to a range between 7 and 8, and it plays an important role in the ocean's carbon cycle. The sensor works with a probe attached to the BNC connector, while the board must be connected using PH2.0 port. Its power consume doesn't exceed 10mA.
-![PhMeter-SEN0161.jpg](Picture/Technology/PhMeter-SEN0161.jpg)
-
-Component | Operating Voltage | Operating Current
------------- | -------------- | --------------
-[LoRa module CMWX1ZZABZ-091](https://www.murata.com/en-eu/products/connectivitymodule/lpwa/overview/lineup/type-abz-078)  |        3.9V DC       | 128 mA (MAX)
-[Turbidity sensor SKU SEN0189](https://wiki.dfrobot.com/Turbidity_sensor_SKU__SEN0189) |  5V DC         | 40 mA (MAX)
-[pH meter SKU SEN0161](https://wiki.dfrobot.com/PH_meter_SKU__SEN0161_) |  5V DC         | 57 mA (MAX)
-
-## Eletric circuit
-https://bestengineeringprojects.com/arduino-ph-meter-using-ph-sensor/
 
 ## Architecture
 When the sensor nodes are deployed their geographical location are hardcoded in their firmware. The sensor node is composed of a  **ST B-L072Z-LRWAN1**, one **pH sensor**, one **Turbidity sensor** SKU SEN0189. The board will run **RIOT OS** used to make it as easy as possible the coding of network functionalities and sensor drivers. The nodes read the data coming from the sensors and send it to a gateway. The gateway then will send the data to the cloud.
