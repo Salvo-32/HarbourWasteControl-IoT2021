@@ -33,7 +33,8 @@ Processing the data of the survey, it is possible to clearly infer that:
 ![Storyboard](/Picture/Storyboard-Complete.png)
 
 ## Previous versions of this document
-* First version of the Concept file can be found [here](../../releases/tag/1.0)
+* First version of the Concept file can be found [here](https://github.com/Salvo-32/HarbourWasteControl-IoT2021/blob/6a600ffb777f99500abf55af4701394b647948be/Concept.md)
+* Second version of the Concept file can be found [here](https://github.com/Salvo-32/HarbourWasteControl-IoT2021/blob/fc6fac34cee5149cbdab9ec8186ca964ee297700/Concept.md)
 
 ## Sources
 - https://www.camera.it/parlam/leggi/deleghe/03182dl.htm
