@@ -106,6 +106,9 @@ Thanks to *Data Aggregation*, number of LoRa packets decreases therefore less cu
 ## 3. Network technology assessment
 ### Network traffic analysis
 
+## Previous versions of this document
+* First version of the Evaluation file can be found [here](https://github.com/Salvo-32/HarbourWasteControl-IoT2021/blob/63498dc245cb5c845ba2694d265e2b9771869f05/Evaluation.md)
+* Second version of the Evaluation file can be found [here](https://github.com/Salvo-32/HarbourWasteControl-IoT2021/blob/d0cc2b1ecb915ec3a135fc507196c28b82ca16c5/Evaluation.md)
 
 ## Sources
 * https://www.google.com/intl/en-GB/forms/about/
