@@ -17,7 +17,8 @@ Docked boats, during their stay in the port, often illegally unload  wastewater 
 
 ## Youtube videos
 * [HarbourWasteControl - Presentation of the project](https://youtu.be/1_gy5SUA4yE)
-* [HarbourWasteControl - Demo](https://www.youtube.com/watch?v=2p8ujYvwhKw)
+* [HarbourWasteControl - Demo1](https://youtu.be/5cekT2uvU54)
+* [HarbourWasteControl - Demo2](https://www.youtube.com/watch?v=2p8ujYvwhKw)
 
 ## Official Blog
 * [HarbourWasteControl - Blog](https://www.hackster.io/lorenzo-santangelo/harbour-waste-control-467664)
