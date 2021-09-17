@@ -107,7 +107,13 @@ Thanks to *Data Aggregation*, number of LoRa packets decreases therefore less cu
 
 ## 3. Network technology assessment
 ### Network traffic analysis
+To evaluate the time needed for a packet sent by a sensor node to reach the cloud backend we attach to every message that arrives to aws a timestamp via IoT Core rule. This allowed us to estimate the time needed to send a packet from a sensor node to the cloud.
 
+Below there is a list of packets captured, sent by the real node.
+
+<img src="https://github.com/Salvo-32/HarbourWasteControl-IoT2021/blob/main/Picture/Evaluation/hwc.png">
+
+A packet arrives to the cloud every in less than ~20s, so it is safe to assume that if the cloud backend fetch data from the database every ~30s it would fetch new data.
 ## 4. Limits
 1. pH sensor SEN0161, after one hour execution, starts to carry out ever less accurate values with respect to the same aqeous solution. As well in order to ensure the accuracy of the pH probe, you need to use the standard solution to calibrate it regularly. Generally, the period is about half a year. If you meaure the dirty aqueous solution, you need to increase the frequency of calibration. Therefore aqueous solution like the harbour water would require often a calibration.
   1. More reliable pH sensor is required to avoid frequent calibration and to carry our more stable values

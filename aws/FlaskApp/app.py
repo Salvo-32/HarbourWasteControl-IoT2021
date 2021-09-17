@@ -14,10 +14,12 @@ device_ids = ["dwkm2wm0dev1","dwkm2wm0dev2","dwkm2wm0dev3","dwkm2wm0dev4"]
 def predict_values(krigingobj, plotgrid=61):
 	
 	# Generates x and y coordinates	
-	X = np.linspace(krigingobj.normRange[0][0],
+	x_axis = np.linspace(krigingobj.normRange[0][0],
 		krigingobj.normRange[0][1], num=plotgrid)
-	Y = np.linspace(krigingobj.normRange[1][0],
+	y_axis = np.linspace(krigingobj.normRange[1][0],
 		krigingobj.normRange[1][1], num=plotgrid)
+
+	X, Y = np.meshgrid(x_axis, y_axis)
 
 	# Predicted values
 	zs = np.array([krigingobj.predict([x,y]) for x,y in zip(np.ravel(X), np.ravel(Y))])	
@@ -26,8 +28,8 @@ def predict_values(krigingobj, plotgrid=61):
 	# Calculate errors between original and predicted
 	zse = np.array([krigingobj.predict_var([x,y]) for x,y in zip(np.ravel(X), np.ravel(Y))])
 	Ze = zse.reshape(X.shape)
-	
-	return X,Y,Z,Ze
+
+	return x_axis,y_axis,Z,Ze
 
 def query_devices(device_ids, dynamodb=None):	
 
