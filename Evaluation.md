@@ -22,7 +22,7 @@ The evaluation of each paramenter includes:
 1. [User eXperience and satisfaction](#User-eXperience-and-satisfaction)
 2. [Power consumption](#Power-consumption)
 3. [Network technology assessment/Network performace](#Network-technology-assessment)
-
+4. Limits(#4.-Limits)
 ## 1. User eXperience and satisfaction 
 As Don Norman and Jakob Nielsen state:
 > User-experience encompasses all the aspects of the end-user's interaction with the company, its services and its products.
@@ -105,6 +105,12 @@ Thanks to *Data Aggregation*, number of LoRa packets decreases therefore less cu
 
 ## 3. Network technology assessment
 ### Network traffic analysis
+
+## 4. Limits
+1. pH sensor SEN0161, after one hour execution, starts to carry out ever less accurate values with respect to the same aqeous solution. As well in order to ensure the accuracy of the pH probe, you need to use the standard solution to calibrate it regularly. Generally, the period is about half a year. If you meaure the dirty aqueous solution, you need to increase the frequency of calibration. Therefore aqueous solution like the harbour water would require often a calibration.
+  1. More reliable pH sensor is required to avoid frequent calibration and to carry our more stable values
+2. Turbidity sensor SEN0189, conversely returns high quality (stable) values of Total suspended solids. Unfortunately it is not water-proof, namely the top of probe is not waterproof therefore it is difficult to handle because of aqueous solution's movements
+  1. Probe should grant Immersion, up to 1 meter (3 ft 3 in) depth, as indicated by [IP code specification](https://en.wikipedia.org/wiki/IP_Code). In this way probe could be postioned in real marine water
 
 
 ## Previous versions of this document
