@@ -51,7 +51,7 @@ static uint8_t appkey[LORAMAC_APPKEY_LEN];
 int analog_input_line[ANALOG_INPUT_LINE_NUM] = { ADC_LINE(0), ADC_LINE(2) }; //Real PIN: 0 pH-sensor, 2 Turbidity-sensor //Software PIN: 0 pH-sensor, 1 Turbidity-sensor
 #define ADC_RES     ADC_RES_12BIT
 //adc_res_t adc_res = ADC_RES_12BIT; //TODO
-int8_t sample_rate = 3; // X s
+int8_t sample_rate = 15; // X s
 
 //Functions
 int8_t lora_initialization(void) {
