@@ -30,7 +30,7 @@ The following sections describe in detail Hardware and Software deployed in each
 At home we demonstrate the use of real sensors through local real board for HWC
 
 ### Components
-1. The [B-L072Z-LRWAN1](https://www.st.com/en/evaluation-tools/b-l072z-lrwan1.html) is a development board to learn and develop solutions based on LoRa®, Sigfox™, and FSK/OOK technologies. It hosts pH and Turbidity **sensors**, On-board LEDs that act as **actuators** to inform user of board status, and LoRa module for **network communications** of data. Further information in the following paragraphs
+1. The [B-L072Z-LRWAN1](https://www.st.com/en/evaluation-tools/b-l072z-lrwan1.html) is a development board to learn and develop solutions based on LoRa®, Sigfox™, and FSK/OOK technologies. It hosts pH and Turbidity **sensors**, On-board LEDs that act as **actuators** to inform user of board status, and LoRa module for **network communications** of data. Since each board resides within the harbour, it is powered on by harbour's electric small tower. Further information about power consumption is provided at [Evaluation.md](/Evaluation.md) document
     1. Component    | Operating Voltage | Operating Current
        ------------ | ----------------- | -----------------
        [LoRa module CMWX1ZZABZ-091](https://www.murata.com/en-eu/products/connectivitymodule/lpwa/overview/lineup/type-abz-078)  | 3.9V DC | 128 mA (MAX)
