@@ -22,7 +22,7 @@ The evaluation of each paramenter includes:
 1. [User eXperience and satisfaction](#User-eXperience-and-satisfaction)
 2. [Power consumption](#Power-consumption)
 3. [Network technology assessment/Network performace](#Network-technology-assessment)
-4. Limits(#4.-Limits)
+4. [Limits](##4.-Limits)
 ## 1. User eXperience and satisfaction 
 As Don Norman and Jakob Nielsen state:
 > User-experience encompasses all the aspects of the end-user's interaction with the company, its services and its products.
