@@ -92,7 +92,7 @@ Thanks to *Data Aggregation*, number of LoRa packets decreases therefore less cu
   ![LocalCurrentConsumption1](./Picture/Evaluation/LocalCurrentConsumption1.png)
   ![LocalCurrentConsumption2](./Picture/Evaluation/LocalCurrentConsumption2.png)
   ![LocalCurrentConsumption3](./Picture/Evaluation/LocalCurrentConsumption3.png)
-  ![LocalCurrentConsumption3](./Picture/Evaluation/LocalCurrentConsumption3.png)
+  ![LocalCurrentConsumption4](./Picture/Evaluation/LocalCurrentConsumption4.png)
 
 2. ```plot_oml_consum --input ~/.iot-lab/277099/consumption/st_lrwan1_1.oml --power --label "Endpoint (stlrwan1-1) - Power consumption analysis - Exp ID 277099"``` 
   ![277099_stlrwan1-1_PowerMonitoring](./Picture/Evaluation/277099_stlrwan1-1_PowerMonitoring.png)
