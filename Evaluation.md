@@ -19,10 +19,10 @@ The evaluation of each paramenter includes:
 * Results
 
 ## Index
-1. [User eXperience and satisfaction](#User-eXperience-and-satisfaction)
-2. [Power consumption](#Power-consumption)
-3. [Network technology assessment/Network performace](#Network-technology-assessment)
-4. [Limits](##4.-Limits)
+1. [User eXperience and satisfaction](#1-user-experience-and-satisfaction)
+2. [Power consumption](#2-power-consumption)
+3. [Network technology assessment/Network performace](#3-network-technology-assessment)
+4. [Limits](#4-limits)
 ## 1. User eXperience and satisfaction 
 As Don Norman and Jakob Nielsen state:
 > User-experience encompasses all the aspects of the end-user's interaction with the company, its services and its products.
@@ -57,16 +57,14 @@ Processing the data of the survey, it is possible to clearly infer that:
 This assesment analyses energy consumption of both real node and remote nodes, by measuring current and power levels during [firmware](Demo/main.c) is running on.
 As of [Technology.md](/Technology.md) main hardware components involved in the project have the following max power consumption:
 - [ST B-L072Z-LRWAN1](https://www.st.com/en/evaluation-tools/b-l072z-lrwan1.html) 
-
-Component | Operating Voltage | Operating Current
------------- | -------------- | --------------
-[LoRa module CMWX1ZZABZ-091](https://www.murata.com/en-eu/products/connectivitymodule/lpwa/overview/lineup/type-abz-078)  |        3.9V DC       | 128 mA (MAX)
-[Turbidity sensor SKU SEN0189](https://wiki.dfrobot.com/Turbidity_sensor_SKU__SEN0189) |  5V DC         | 40 mA (MAX)
-[pH sensor SKU SEN0161](https://wiki.dfrobot.com/PH_meter_SKU__SEN0161_) |  5V DC         | 57 mA (MAX)
+  Component | Operating Voltage | Operating Current
+  ------------ | -------------- | --------------
+  [LoRa module CMWX1ZZABZ-091](https://www.murata.com/en-eu/products/connectivitymodule/lpwa/overview/lineup/type-abz-078)  |        3.9V DC       | 128 mA (MAX)
+  [Turbidity sensor SKU SEN0189](https://wiki.dfrobot.com/Turbidity_sensor_SKU__SEN0189) |  5V DC         | 40 mA (MAX)
+  [pH sensor SKU SEN0161](https://wiki.dfrobot.com/PH_meter_SKU__SEN0161_) |  5V DC         | 57 mA (MAX)
   
 ### Evaluation methodology
-For the real node, current analysis takes place between the USB power supply and the acutual board. In particular a digital multimeter is connected in series as shown below. Every 10 seconds (sampling rate) for a period of 10 minutes, current shown in the multimeter's display is manually reported inside an OML file and then plotted using [OML plotting tool](https://www.iot-lab.info/docs/tools/consumption-monitoring/) by FIT IoT-LAB
-
+For the real node, current analysis takes place between the USB power supply and the acutual board. In particular a digital multimeter is connected in series as shown below. Average and Max current values are evaluated and presented through table and pictures below
 ![CircuitoAmperometroInSerie](/Picture/AmperometroInSerie.png)
 
 For the [Saclay](https://www.iot-lab.info/docs/deployment/saclay/) remote boards current and power analysis takes place thanks to the [Consumption monitoring tool](https://www.iot-lab.info/docs/tools/consumption-monitoring/). Each remote board is connected to an autonomous on-board system called Control Node (CN), as shown below, which is able to monitor its energy consumption. The advantage of using a dedicated MCU (Control node) is to guarantee real-time execution of these measurements. In this case, the evaluation is more accurate, since it is an automated one, and it takes 10 minutes (as in the real node) but at 65.95 ms sampling rate
@@ -90,11 +88,15 @@ Graphs reported below shows the way these two parameters change with respect to 
 Thanks to *Data Aggregation*, number of LoRa packets decreases therefore less current peaks (less Energy consumption), but at the same time latency increases because packets are bigger than the packets containing only pH / turbudity value separately
 ![DataAggregation](/Picture/DataAggregation.png)
 
-1. ```plot_oml_consum --input ~/.iot-lab/277099/consumption/st_lrwan1_local.oml --power --label "Endpoint (stlrwan1-local) - Power consumption analysis - Exp ID 277099"``` 
-  ![277099_stlrwan1-local_PowerMonitoring](./Picture/Evaluation/277099_stlrwan1-local_PowerMonitoring.png)
-3. ```plot_oml_consum --input ~/.iot-lab/277099/consumption/st_lrwan1_1.oml --power --label "Endpoint (stlrwan1-1) - Power consumption analysis - Exp ID 277099"``` 
+1. ```Real local node - (stlrwan1-local)``` 
+  ![LocalCurrentConsumption1](./Picture/Evaluation/LocalCurrentConsumption1.png)
+  ![LocalCurrentConsumption2](./Picture/Evaluation/LocalCurrentConsumption2.png)
+  ![LocalCurrentConsumption3](./Picture/Evaluation/LocalCurrentConsumption3.png)
+  ![LocalCurrentConsumption3](./Picture/Evaluation/LocalCurrentConsumption3.png)
+
+2. ```plot_oml_consum --input ~/.iot-lab/277099/consumption/st_lrwan1_1.oml --power --label "Endpoint (stlrwan1-1) - Power consumption analysis - Exp ID 277099"``` 
   ![277099_stlrwan1-1_PowerMonitoring](./Picture/Evaluation/277099_stlrwan1-1_PowerMonitoring.png)
-5. ```plot_oml_consum --input ~/.iot-lab/277099/consumption/st_lrwan1_2.oml --power --label "Endpoint (stlrwan1-2) - Power consumption analysis - Exp ID 277099"```
+3. ```plot_oml_consum --input ~/.iot-lab/277099/consumption/st_lrwan1_2.oml --power --label "Endpoint (stlrwan1-2) - Power consumption analysis - Exp ID 277099"```
   ![277099_stlrwan1-2_PowerMonitoring](./Picture/Evaluation/277099_stlrwan1-2_PowerMonitoring.png)
 4. ```plot_oml_consum --input ~/.iot-lab/277099/consumption/st_lrwan1_3.oml --power --label "Endpoint (stlrwan1-3) - Power consumption analysis - Exp ID 277099"```
   ![277099_stlrwan1-3_PowerMonitoring](./Picture/Evaluation/277099_stlrwan1-3_PowerMonitoring.png)
