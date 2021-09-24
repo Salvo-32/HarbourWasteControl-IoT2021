@@ -116,7 +116,7 @@ Below there is a list of packets captured, sent by the real node.
 A packet arrives to the cloud every in less than ~20s, so it is safe to assume that if the cloud backend fetch data from the database every ~30s it would fetch new data.
 ## 4. Limits
 1. pH sensor SEN0161, after one hour execution, starts to carry out ever less accurate values with respect to the same aqeous solution. As well in order to ensure the accuracy of the pH probe, you need to use the standard solution to calibrate it regularly. Generally, the period is about half a year. If you meaure the dirty aqueous solution, you need to increase the frequency of calibration. Therefore aqueous solution like the harbour water would require often a calibration.
-  1. More reliable pH sensor is required to avoid frequent calibration and to carry our more stable values
+  1. More reliable/professional pH meter is required to avoid frequent calibration and to carry our more stable values, e.g. https://uk.rs-online.com/web/p/ph-meters/3275033/
 2. Turbidity sensor SEN0189, conversely returns high quality (stable) values of Total suspended solids. Unfortunately it is not water-proof, namely the top of probe is not waterproof therefore it is difficult to handle because of aqueous solution's movements
   1. Probe should grant Immersion, up to 1 meter (3 ft 3 in) depth, as indicated by [IP code specification](https://en.wikipedia.org/wiki/IP_Code). In this way probe could be postioned in real marine water
 
