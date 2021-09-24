@@ -11,16 +11,16 @@ In order to inspect and predict the quality of port waters, HarbourWasteControl 
 
 **NOTE** We are perfectly aware that the physical quantities involved in this project, namely pH and Total Suspended Solids, are not enough to point out water pollution phenomenon inside a real harbour, because a complete analysis requires a deeper study performed in a lab.
 
-But according to the [Legislative decree 152/06](https://www.gazzettaufficiale.it/atto/serie_generale/caricaArticolo?art.progressivo=0&art.idArticolo=5&art.versione=1&art.codiceRedazionale=006G0171&art.dataPubblicazioneGazzetta=2006-04-14&art.idGruppo=54&art.idSottoArticolo1=10&art.idSottoArticolo=1&art.flagTipoArticolo=2), which regulates analysis of superficial waters, these parameters are among the fundamental one to be analyzed **immediately** at the sampling time and before the evaluation of water samples in laboratory, (regardless of context, type of environmental water)
+But according to the [Legislative decree 152/06](https://www.gazzettaufficiale.it/atto/serie_generale/caricaArticolo?art.progressivo=0&art.idArticolo=5&art.versione=1&art.codiceRedazionale=006G0171&art.dataPubblicazioneGazzetta=2006-04-14&art.idGruppo=54&art.idSottoArticolo1=10&art.idSottoArticolo=1&art.flagTipoArticolo=2), which regulates analysis of superficial waters, these parameters are among the fundamental ones to be analyzed **immediately** at the sampling time and before the evaluation of water samples in laboratory, (regardless of context, type of environmental water). Given their importance they belong to “Parametri I gruppo”.
 
-So data provided by the sensor nodes spread all over the harbour, are the starting point for a more complex analysis and can reduce the workload of authorised personnel during sampling activity because these  don’t care about these parameters. In the end we use these sensors to build a model to predict the spread of water pollution inside the harbour. Give their importance they belong to “Parametri I gruppo”
+So data provided by the sensor nodes spread all over the harbour, are the starting point for a more complex analysis and can reduce the workload of authorised personnel during sampling activity because these one don’t care about these parameters. In the end we use these sensors to build a model to predict the spread of water pollution inside the harbour. 
 
 ![dlgs-152-06.png](Picture/Technology/dlgs-152-06.png)
 
 ## High-level design & Components
-Implementation and Deploymnent of HWC follows design proposed during *Lecture 11 - Performance Evaluation for IoT* by [Prof. Andrea Vitaletti](https://github.com/andreavitaletti) and therefore involves two different places:
+Implementation and Deploymnent of HWC follows the design proposed during *Lecture 11 - Performance Evaluation for IoT* by [Prof. Andrea Vitaletti](https://github.com/andreavitaletti) and therefore involves two different workspaces:
 1. Real local node at our home
-2. [FIT IoT-LAB Testbed](https://www.iot-lab.info)
+2. [FIT IoT-LAB Testbed](https://www.iot-lab.info) at [Saclay site](https://www.iot-lab.info/docs/deployment/saclay/)
 
 ![VitalettiDesign](/Picture/Technology/VitalettiDesign.png)
 
@@ -30,7 +30,7 @@ The following sections describe in detail Hardware and Software deployed in each
 At home we demonstrate the use of real sensors through local real board for HWC
 
 ### Components
-1. The [B-L072Z-LRWAN1](https://www.st.com/en/evaluation-tools/b-l072z-lrwan1.html) is a development board to learn and develop solutions based on LoRa®, Sigfox™, and FSK/OOK technologies. It hosts pH and Turbidity **sensors**, On-board LEDs that act as **actuators** to inform user of board status, and LoRa module for **network communications** of data. Since each board resides within the harbour, it is powered on by harbour's electric small tower. Further information about power consumption is provided at [Evaluation.md](/Evaluation.md) document
+1. The [B-L072Z-LRWAN1](https://www.st.com/en/evaluation-tools/b-l072z-lrwan1.html) is a development board to learn and develop solutions based on LoRa®, Sigfox™, and FSK/OOK technologies. It hosts pH and Turbidity **sensors**, On-board LEDs that act as **actuators** to inform user of board status, and LoRa module for **network communications**. Since each board resides within the harbour, it is powered on by harbour's electric small tower. Further information about power consumption is provided at [Evaluation.md](/Evaluation.md) document
     1. Component    | Operating Voltage | Operating Current
        ------------ | ----------------- | -----------------
        [LoRa module CMWX1ZZABZ-091](https://www.murata.com/en-eu/products/connectivitymodule/lpwa/overview/lineup/type-abz-078)  | 3.9V DC | 128 mA (MAX)
@@ -39,7 +39,7 @@ At home we demonstrate the use of real sensors through local real board for HWC
     1. Component    | Operating Voltage | Operating Current | Measuring Range 
        ------------ | ----------------- | ----------------- | ---------------
        [Turbidity sensor SKU SEN0189](https://wiki.dfrobot.com/Turbidity_sensor_SKU__SEN0189) |  5V DC | 40 mA (MAX) | 0-4.5 V
-3. The [pH meter SKU SEN0161](https://wiki.dfrobot.com/PH_meter_SKU__SEN0161_) measure the pH, a scale used to specify the acidity or basicity of an aqueous solution. The pH of seawater is typically limited to a range between 7 and 8, and it plays an important role in the ocean's carbon cycle. The sensor works with a probe attached to the BNC connector, while the board must be connected using PH2.0 port. Its power consume doesn't exceed 10mA.
+3. The [pH meter SKU SEN0161](https://wiki.dfrobot.com/PH_meter_SKU__SEN0161_) measure the pH, a scale used to specify the acidity or basicity of an aqueous solution. The pH of seawater is typically limited to a range between 7 and 8, and it plays an important role in the ocean's carbon cycle. The sensor works with a probe attached to the BNC connector, while the board must be connected using PH2.0 port. Its power consumption doesn't exceed 10mA.
     1. Component    | Operating Voltage | Operating Current | Measuring Range 
        ------------ | ----------------- | ----------------- | ---------------
        [pH meter SKU SEN0161](https://wiki.dfrobot.com/PH_meter_SKU__SEN0161_) | 5V DC | 57 mA (MAX) | 0-14 PH
@@ -69,15 +69,13 @@ IoT-LAB is a facility suitable for testing networking with small wireless sensor
 ### Components
 1. FIT IoT-LAB Testbed, which provides #25 [ST B-L072Z-LRWAN1](https://www.iot-lab.info/docs/boards/st-b-l072z-lrwan1/). HWC uses 5 out of 25 remote boards ```st-lrwan1-1```-```st-lrwan1-5``` to perform large-scale evaluations
     1.1 **NOTE** Because of the use of a remote testbed, it is not possible to connect intended sensors physically, pH sensor and Turbidity ones, in remote boards. There is no possibility to get real data from the sensors and so no pH alteration and Tubidity variations occurs (like conversely they happen in ```st-lrwan1-local```). 
-2. To deal with this problem we have followed **Dataset traces** approach proposed throughout Lecture 11. In particular remote boards rely on [The Water Quality dataset](https://www.kaggle.com/adityakadiwal/water-potability) by Kaggle.com - Aditya Kadiwal. It is a CSV dataset containing water quality metrics for **3276 different water bodies**, in particular remote boards retrieve the two desired values from the dataset locally. In this way it possible to **simulate** behaviour of pH and Turbidity sensor with actual data as they were physically connected
+2. To deal with this problem we have followed **Dataset traces** approach proposed throughout  *Lecture 11 - Performance Evaluation for IoT* by [Prof. Andrea Vitaletti](https://github.com/andreavitaletti). In particular remote boards rely on [The Water Quality dataset](https://www.kaggle.com/adityakadiwal/water-potability) by Kaggle.com - Aditya Kadiwal. It is a CSV dataset containing water quality metrics for **3276 different water bodies**, in particular remote boards retrieve the two desired values from the dataset locally. In this way it possible to **simulate** behaviour of pH and Turbidity sensor with actual data as they were physically connected
 ![Dataset](/Picture/Dataset.png)
 3. Three on-board general-purpose LEDs of the [B-L072Z-LRWAN1](https://www.st.com/en/evaluation-tools/b-l072z-lrwan1.html)
     1. Led 0 - informs user of successful pH reading 
     2. Led 1 - informs user of successful Turbidity reading
     3. Led 2 - informs user of successful data transmission over LoRa network
-4. Saclay TTN LoRa gateway, which is a **public** LoRa concentrator/gateway provided by [TheThingsNetwork](https://www.thethingsnetwork.org/). It allows the real local node above to access TTN LoRaWAN Network Server. 
-
- 	http://www.usamahkhan.com/projects/spatial-interpolation
+4. Saclay TTN LoRa gateway, which is a **public** LoRa concentrator/gateway provided by [TheThingsNetwork](https://www.thethingsnetwork.org/). It allows the Saclay boards to access TTN LoRaWAN Network Server. 
 
 ## Architecture - Network diagram (Physical devices and Protocols)
 ![Image1](Picture/architecture_final.png)
@@ -96,6 +94,8 @@ To recap, Using Krigin we exploit the real collected data from sensors to determ
 
 To the aim of this project we make use of pyKriging, a User Friendly Python Kriging Toolbox developed by Paulson Chris; Ragkousis Giorgos at the University of Southampton in the Computational Design and Engineering group. For further reference, please visit www.pykriging.com
 pyKriging implements all Kriging's mathematical and statistical computations that we saw before and provides as outcome data to create different kind of graph
+
+A deep and detailed explantion of Kriging model is available [here](http://www.usamahkhan.com/projects/spatial-interpolation)
 
 <img src="https://github.com/Salvo-32/HarbourWasteControl-IoT2021/blob/main/Picture/architecture2.png" width="500">
 
