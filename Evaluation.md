@@ -55,7 +55,7 @@ Processing the data of the survey, it is possible to clearly infer that:
 
 ## 2. Power consumption
 This assesment analyses energy consumption of both real node and remote nodes, by measuring current and power levels during [firmware](Demo/main.c) is running on.
-As of [Technology.md](/Technology.md) main hardware components involved in the project have the following max power consumption:
+As of [Technology.md](/Technology.md), main hardware components involved in the project have the following max power consumption:
 - [ST B-L072Z-LRWAN1](https://www.st.com/en/evaluation-tools/b-l072z-lrwan1.html) 
   Component | Operating Voltage | Operating Current
   ------------ | -------------- | --------------
@@ -80,7 +80,7 @@ For the [Saclay](https://www.iot-lab.info/docs/deployment/saclay/) remote boards
 * [OML plotting tool](https://www.iot-lab.info/docs/tools/consumption-monitoring/) by FIT IoT-LAB, a python script helps to analyse monitoring data, i.e. plots iot-lab consumption OML files as graphs (the ones below).
 
 ### Results
-Graphs reported below shows the way these two parameters change with respect to different activites board undertakes ([firmware - main.c](Demo/main.c)):
+Graphs reported below shows the way these two indicators change with respect to different activites that board undertakes ([firmware - main.c](Demo/main.c)):
 1. Initialization and Use of the above-mentioned sensors to get environmental data, including the adc sampling and mapping between raw sampled data and physical quantities
 2. Initialization and Use of the three LEDs on board as actuators, to allow **indicate** successful pH reads, turbidity reads, sending of Lora messages
 3. LoRa network communications, including connection initialization, cripthography operations performed by Riot-Semtech functions, secure data exchange
