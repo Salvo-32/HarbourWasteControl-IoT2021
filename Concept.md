@@ -12,7 +12,7 @@ According to that decree, any kind of ship (hydrofoils, fishing boats, pleasure 
 Unfortunately, in spite of the economic sanctions foreseen by the law (Art.13-Sanction), i.e.pecuniary administrative sanction 3000€ - 30000€ in case of offence,  it is common among ship commanders to notify a false amount of wastewater (obviously smaller than the real amount) to pay less money for the draining. The non-declared amount is usually secretly dismissed in the port before the official draining procedure. In a situation like this, the harbour authority has no concrete way to notice the partial offence that contributes to polluting the harbour waters. 
 
 As a consequence, such an offence represents  real environmental danger and  damages to the extraordinary beauty of EU’s coastal areas ([Blue Growth - Coastal Tourism](https://ec.europa.eu/maritimeaffairs/policy/coastal_tourism)).
-To avoid this, HarbourWasteControl proposes itself as a service for the detection and prediction (relying on [Kriging method]()) of the water quality near the harbour in favour of the harbour managing authority
+To avoid this, HarbourWasteControl proposes itself as a service for the detection and prediction (relying on [Kriging method](Technology.md#kriging-method)) of the water quality near the harbour in favour of the harbour managing authority
 
 ## 2. Shipowner's point of view
 Whereas on one hand the Harbour managing authority is the first entity affected by the of the illegal draining of  wastewater, on the other hand the shipowners are the real protagonists of these offences. Therefore another important user’s point of view is that of the ownerships. 
