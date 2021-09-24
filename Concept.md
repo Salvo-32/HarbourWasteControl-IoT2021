@@ -15,9 +15,9 @@ As a consequence, such an offence represents  real environmental danger and  dam
 To avoid this, HarbourWasteControl proposes itself as a service for the detection and prediction (relying on [Kriging method](Technology.md#kriging-method)) of the water quality near the harbour in favour of the harbour managing authority
 
 ## 2. Shipowner's point of view
-Whereas on one hand the Harbour managing authority is the first entity affected by the of the illegal draining of  wastewater, on the other hand the shipowners are the real protagonists of these offences. Therefore another important user’s point of view is that of the ownerships. 
+Whereas on one hand the Harbour managing authority is the first entity affected by illegal draining of  wastewater, on the other hand the shipowners are the real protagonists of these offences. Therefore another important user’s point of view is that of the ownerships. 
 To study such problem from their point of view, a direct survey tool has been used, that is a survey carried out to a pool of **real shipowners** via Google  Forms platform ([Official link to the Poll](https://forms.gle/8TZQKGpQ1RFh6UQP9)). The survey has been carried out in Italian as the people involved in the survey are Italian (Future developments of the project see it translated into English). 
-The aim of the survey is to test the ship commanders’ level of knowledge of wastewater draining procedures. Afterwards participants are asked to express their opinion about the introduction of a technological system for water quality measurement to prevent the illegal draining of waste substances in the docks.
+The aim of the survey is to test the ship commanders’ level of knowledge of wastewater draining procedures. Afterwards participants are asked to express their opinion about the introduction of a technological system for water quality measurement to analyse and predict the illegal draining of waste substances near harbour water surface.
 
 A snapshot of the poll results is the following, provided by Google:
 ![LastPoll](/Picture/ShipOwners-Poll.png)
@@ -29,7 +29,6 @@ Processing the data of the survey, it is possible to clearly infer that:
 4. Eventually, the shipowners would appreciate this service more whether the port managing authority offered them discounts with respect to the harbour fees
 
 ## Storyboard
-
 ![Storyboard](/Picture/Storyboard-Complete.png)
 
 ## Previous versions of this document
