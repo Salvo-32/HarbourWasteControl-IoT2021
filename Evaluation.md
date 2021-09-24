@@ -21,7 +21,7 @@ The evaluation of each paramenter includes:
 ## Index
 1. [User eXperience and satisfaction](#1-user-experience-and-satisfaction)
 2. [Power consumption](#2-power-consumption)
-3. [Network technology assessment/Network performace](#3-network-technology-assessment)
+3. [Network performace](#3-Network performace)
 4. [Limits](#4-limits)
 ## 1. User eXperience and satisfaction 
 As Don Norman and Jakob Nielsen state:
@@ -105,7 +105,7 @@ Thanks to *Data Aggregation*, number of LoRa packets decreases therefore less cu
 6. ```plot_oml_consum --input ~/.iot-lab/277099/consumption/st_lrwan1_5.oml --power --label "Endpoint (stlrwan1-5) - Power consumption analysis - Exp ID 277099"```
   ![277099_stlrwan1-5_PowerMonitoring](./Picture/Evaluation/277099_stlrwan1-5_PowerMonitoring.png)
 
-## 3. Network technology assessment
+## 3. Network performace
 ### Network traffic analysis
 To evaluate the time needed for a packet sent by a sensor node to reach the cloud backend we attach to every message that arrives to aws a timestamp via IoT Core rule. This allowed us to estimate the time needed to send a packet from a sensor node to the cloud.
 
