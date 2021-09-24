@@ -21,7 +21,7 @@ The evaluation of each paramenter includes:
 ## Index
 1. [User eXperience and satisfaction](#1-user-experience-and-satisfaction)
 2. [Power consumption](#2-power-consumption)
-3. [Network performace](#3-Network performace)
+3. [Network performace](#3-network-performace)
 4. [Limits](#4-limits)
 ## 1. User eXperience and satisfaction 
 As Don Norman and Jakob Nielsen state:
